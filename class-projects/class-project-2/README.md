@@ -6,7 +6,7 @@
 4. **Cart** - cart implementation where people can proceed with payment
 5. **Checkout and payment** - checkout and payment module
 6. **Contact and customer support** - gives option to contact the store
-7. **User rewiews** - module for users review
+7. **User reviews** - module for users review
 8. **Account (Sign-up)** - module where people can sign-up or log-in into their account
 9. **Professional users** - module with options for professional users to enqire about bulk ordering, wholesale priceing, etc. 
 10. **Designers** - module that sorts products by desingers
