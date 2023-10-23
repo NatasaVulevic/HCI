@@ -93,7 +93,7 @@
 
  ## Combined:
  - Whats new
-  - New arrivals
+   - New arrivals
   - Designers
 - Browsing
  - Products
