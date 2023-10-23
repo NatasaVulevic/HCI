@@ -45,7 +45,7 @@
   - Designers
   - Social media
 - Are products any good?
-  - User rewiews
+  - User reviews
 - When will products arrive and how much does delivery cost?
   - Delivery information 
 - Can i see products in store?
