@@ -7,7 +7,7 @@
 5. **Checkout and payment** - checkout and payment module
 6. **Contact and customer support** - gives option to contact the store
 7. **User rewiews** - module for users review
-8. **Account(Sign-up)** - module where people can sign-up or log-in into their account
+8. **Account( Sign-up )** - module where people can sign-up or log-in into their account
 9. **Professional users** - module with options for professional users to enqire about bulk ordering, wholesale priceing, etc. 
 10. **Designers** - module that sorts products by desingers
 11. **List of stores** - list of phisical stores and its location 
@@ -18,7 +18,7 @@
 16. **Store availability** - module that shows are products availabile in store
 
 ## Sarah:
-- Whats new
+- Whats new?
    - New arrivals
    - Designers
 - Browsing
@@ -46,7 +46,7 @@
   - Social media
 - Are products any good?
   - User rewiews
-- When will they arrive and how much does delivery cost?
+- When will products arrive and how much does delivery cost?
   - Delivery information 
 - Can i see products in store?
   - List of stores
@@ -63,14 +63,14 @@
   - Contact and customer support 
 
 ## Olivia:
-- Whats new
+- Whats new?
   - New arrivals
 - Browsing
   - Products
   - Collections
   - Designers
   - Social media
-- I'im searching for something specific
+- I'm searching for something specific
   - Search and filter
   - Designers
 - I want to buy something
@@ -79,7 +79,7 @@
 - I want to save something
   - Likes
   - Account
-- When will they arrive and how much does delivery cost
+- When will products arrive and how much does delivery cost?
   - Delivery information 
 - I want to make purchase specific to proffesional user needs
    - Proffesional users
@@ -87,12 +87,12 @@
    - Contact and customer support
 - Something went wrong
   - Contact and customer support
-- Can i see products in store
+- Can I see products in store
   - List of stores
   - Store availability
 
  ## Combined:
- - Whats new
+ - Whats new?
    - New arrivals
    - Designers
 - Browsing
@@ -113,9 +113,9 @@
   - Contact and customer support
   - Are products any good?
   - User reviews
-- When will they arrive and how much does delivery cost?
+- When will Products arrive and how much does delivery cost?
   - Delivery information 
-- Can i see products in store?
+- Can I see products in store?
   - List of stores
   - Store availability
  - I want to make purchase specific to proffesional user needs
