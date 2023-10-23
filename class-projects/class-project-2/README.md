@@ -4,18 +4,18 @@
 2. **Products** - display of all products 
 3. **Search and filters**- module with search and filtering options
 4. **Cart** - cart implementation where people can proceed with payment
-5. Checkout and payment - checkout and payment module
-6. Contact and customer support - gives option to contact the store
-7. User rewiews - module for users review
-8. Account(Sign-up) - module where people can sign-up or log-in into their account
-9. Professional users - module with options for professional users to enqire about bulk ordering, wholesale priceing, etc. 
-10. Designers - module that sorts products by desingers
-11. List of stores - list of phisical stores and its location 
-12. Delivery information - gives information about delivery
-13. Collections - module that sorts products by collection
-14. Social media - connects website to social-media platforms
-15. Likes- module where you can save something you like
-16. Store availability- are products availabile in store
+5. **Checkout** and payment - checkout and payment module
+6. **Contact and customer support** - gives option to contact the store
+7. **User rewiews** - module for users review
+8. **Account(Sign-up)** - module where people can sign-up or log-in into their account
+9. **Professional users** - module with options for professional users to enqire about bulk ordering, wholesale priceing, etc. 
+10. **Designers** - module that sorts products by desingers
+11. **List of stores** - list of phisical stores and its location 
+12. **Delivery information** - gives information about delivery
+13. **Collections** - module that sorts products by collection
+14. **Social media** - connects website to social-media platforms
+15. **Likes**- module where you can save something you like
+16. **Store availability** - are products availabile in store
 
 ##Sarah:
 -Whats new
