@@ -7,7 +7,7 @@
 5. **Checkout and payment** - checkout and payment module
 6. **Contact and customer support** - gives option to contact the store
 7. **User rewiews** - module for users review
-8. **Account( Sign-up )** - module where people can sign-up or log-in into their account
+8. **Account (Sign-up)** - module where people can sign-up or log-in into their account
 9. **Professional users** - module with options for professional users to enqire about bulk ordering, wholesale priceing, etc. 
 10. **Designers** - module that sorts products by desingers
 11. **List of stores** - list of phisical stores and its location 
@@ -111,7 +111,7 @@
   - Account
 - Something went wrong
   - Contact and customer support
-  - Are products any good?
+- Are products any good?
   - User reviews
 - When will Products arrive and how much does delivery cost?
   - Delivery information 
