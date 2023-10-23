@@ -19,22 +19,22 @@
 
 ## Sarah:
 - Whats new
-  - New arrivals
-  - Designers
+   - New arrivals
+   - Designers
 - Browsing
- - Products
- - Collections
- - Designers
- - Social media
+   - Products
+   - Collections
+   - Designers
+   - Social media
 - I'm searching for something specific
- - Search and filter
- - Designers
+  - Search and filter
+  - Designers
 - I want to buy something
- - Cart
- - Checkout and payment
+  - Cart
+  - Checkout and payment
 - I want to save something
- - Likes
- - Account
+  - Likes
+  - Account
 - Something went wrong
   - Contact and customer support
  
@@ -112,7 +112,7 @@
 - Something went wrong
   - Contact and customer support
   - Are products any good?
-  - User rewiews
+  - User reviews
 - When will they arrive and how much does delivery cost?
   - Delivery information 
 - Can i see products in store?
