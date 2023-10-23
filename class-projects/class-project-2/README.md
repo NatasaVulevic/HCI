@@ -18,82 +18,8 @@
 16. **Store availability** - module that shows are products availabile in store
 
 ## Sarah:
--Whats new
-  -New arrivals
-  -Designers
--Browsing
- -Products
- -Collections
- -Designers
- -Social media
--I'm searching for something specific
- -Search and filter
- -Designers
--I want to buy something
- -Cart
- -Checkout and payment
--I want to save something
- -Likes
- -Account
--Something went wrong
- -Contact and customer support
- 
-## David:
--Browsing
- -Products
- -Collections
- -Designers
- -Social media
--Are products any good?
- -User rewiews
--When will they arrive and how much does delivery cost?
- Delivery information 
--Can i see products in store?
- -List of stores
- -Store availability
--I'm searching for something specific
- -Search and filter
--I want to buy something
- -Cart
- -Checkout and payment
--I want to save something
- -Likes
- -Account
--Something went wrong
- -Contact and customer support 
-
-## Olivia:
--Whats new
- -New arrivals
--Browsing
- -Products
- -Collections
- -Designers
- -Social media
--I'im searching for something specific
- -Search and filter
- -Designers
--I want to buy something
- -Cart
- -Checkout and payment
--I want to save something
- -Saves
--Account
--When will they arrive and how much does delivery cost
- -Delivery information 
--I want to make purchase specific to proffesional user needs
-  -Proffesional users
--I want to arrange something that is not displayed on the web-site
- -Contact and customer support
--Something went wrong
- -Contact and customer support
--Can i see products in store
- -List of stores
- -Store availability
-
- ## Combined:
- - Whats new
-   - New arrivals
+- Whats new
+  - New arrivals
   - Designers
 - Browsing
  - Products
@@ -110,18 +36,92 @@
  - Likes
  - Account
 - Something went wrong
- - Contact and customer support
- - Are products any good?
- - User rewiews
+  - Contact and customer support
+ 
+## David:
+- Browsing
+  - Products
+  - Collections
+  - Designers
+  - Social media
+- Are products any good?
+  - User rewiews
 - When will they arrive and how much does delivery cost?
- - Delivery information 
+  - Delivery information 
 - Can i see products in store?
- - List of stores
- - Store availability
- - I want to make purchase specific to proffesional user needs
-  - Proffesional users
+  - List of stores
+  - Store availability
+- I'm searching for something specific
+  - Search and filter
+- I want to buy something
+  - Cart
+  - Checkout and payment
+- I want to save something
+  - Likes
+  - Account
+- Something went wrong
+  - Contact and customer support 
+
+## Olivia:
+- Whats new
+  - New arrivals
+- Browsing
+  - Products
+  - Collections
+  - Designers
+  - Social media
+- I'im searching for something specific
+  - Search and filter
+  - Designers
+- I want to buy something
+  - Cart
+  - Checkout and payment
+- I want to save something
+  - Likes
+  - Account
+- When will they arrive and how much does delivery cost
+  - Delivery information 
+- I want to make purchase specific to proffesional user needs
+   - Proffesional users
 - I want to arrange something that is not displayed on the web-site
- - Contact and customer support
+   - Contact and customer support
+- Something went wrong
+  - Contact and customer support
+- Can i see products in store
+  - List of stores
+  - Store availability
+
+ ## Combined:
+ - Whats new
+   - New arrivals
+   - Designers
+- Browsing
+  - Products
+  - Collections
+  - Designers
+  - Social media
+- I'm searching for something specific
+  - Search and filter
+  - Designers
+- I want to buy something
+  - Cart
+  - Checkout and payment
+- I want to save something
+  - Likes
+  - Account
+- Something went wrong
+  - Contact and customer support
+  - Are products any good?
+  - User rewiews
+- When will they arrive and how much does delivery cost?
+  - Delivery information 
+- Can i see products in store?
+  - List of stores
+  - Store availability
+ - I want to make purchase specific to proffesional user needs
+   - Proffesional users
+- I want to arrange something that is not displayed on the web-site
+  - Contact and customer support
  
 
 
