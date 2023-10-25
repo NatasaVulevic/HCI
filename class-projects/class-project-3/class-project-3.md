@@ -22,4 +22,4 @@ In this project, you will leverage the sitemap created in the previous stage to 
 - Deployed Next.js web application accessible via a public URL (Vercel or Netlify).
 - Place the link to your public website in the README.md file of your repository (use the provided [GitHub repo template](https://github.com/mcagalj/HCI-2023-24-template.git) to organize your files).
 
-[The_shop] (https://the-shop2.vercel.app/ "The_shop")
+[The_shop](https://the-shop2.vercel.app/ "The_shop")
