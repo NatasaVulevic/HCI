@@ -1,7 +1,7 @@
 import { Post } from "../page";
 
 interface Params {
-  postId: string;
+  productId: string;
 }
 
 const BASE_API_URL = "https://jsonplaceholder.typicode.com";
@@ -12,7 +12,7 @@ const getPost = async (id: string): Promise<Post> => {
 };
 
 export default async function BlogPost({ params }: { params: Params }) {
-  const post = await getPost(params.postId);
+  const post = await getPost(params.productId);
 
   return (
     <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
