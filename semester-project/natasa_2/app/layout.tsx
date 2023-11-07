@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Notable } from 'next/font/google'
+
 import './globals.css'
 import Link from "next/link"
 
@@ -19,20 +21,21 @@ export default function RootLayout({
     <html lang="en">
       
       <body className={inter.className}>
-      <nav className='flex justify-center p-14'>
+      <nav className='flex justify-between p-14'>   {/* justify-center */}
+        <div> <Link href="/logo"> The shop </Link></div> {/* */}
         <ul className="flex text-lg gap-4">
         <li>
             <Link href="/">Home</Link>
           </li>
          
           <li>
-            <Link href="/about">About</Link>
+            <Link href="/about">About111</Link>
           </li>
           <li>
             <Link href="/products">Products</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Contact88888888</Link>
           </li>         
           <li>
             <Link href="/sign_in">Sign_in</Link>
