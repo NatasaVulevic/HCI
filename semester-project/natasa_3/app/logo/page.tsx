@@ -1,12 +1,11 @@
 import { Notable } from 'next/font/google';
 
-function Logo() {
-    const notable = Notable({
-        weight: '400',
-        subsets: ['latin'],
-        
-      })
-      
+const notable = Notable({
+    weight: '400',
+    subsets: ['latin'],
+ })
+
+function Logo(){  
     return (
         <div className={notable.className}>
            The shop
