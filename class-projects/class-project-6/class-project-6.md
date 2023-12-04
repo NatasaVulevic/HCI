@@ -1,5 +1,5 @@
 ## High-fidelity desktop version
-![Desktop version](/High_fidelity%20(1).png)
+![Desktop version](/class-projects/class-project-6/High_fidelity%20(1).png)
 
 ## High fidelity mobile version
 ![mobile version](/Mobile_version.png)
