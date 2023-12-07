@@ -1,9 +1,10 @@
 import Image from "next/image";
 //import styles from "./home.module.css"
 import slika1 from "/public/slika4.png";
-import Text1 from "/components/Text1.tsx";
-import Slike1set from "/components/Slike1set.tsx";
-import Slike2set from "/components/Slike2set.tsx";
+import Text1 from '@/components/Text1'
+
+import Slike1set from "@/components/Slike1set";
+import Slike2set from "@/components/Slike2set";
 
 
 
