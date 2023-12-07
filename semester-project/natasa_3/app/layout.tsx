@@ -12,7 +12,9 @@ config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHeart } from "@fortawesome/free-regular-svg-icons";
 import {faCartShopping,faMagnifyingGlass,faSearch  } from "@fortawesome/free-solid-svg-icons";
-
+//import Navbar from "app/components/Navbar";
+//import Navbar from "@/components/Navbar";
+// C:\Users\Lenovo\OneDrive\Dokumenti\HCI-2023-24\semester-project\natasa_3\app\layout.tsx
 
 // Get this info from some external source (e.g. CMS)
 const pages = { 
@@ -41,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} >
+
         <nav className="flex items-center justify-between p-10 text-black	overflow-hidden">
         
           <div className={notable.className}><Link href="/">The shop</Link></div>
@@ -60,6 +63,9 @@ export default function RootLayout({
           </div>               
 
         </nav>
+
+//        <Navbar/>
+
         {children}
 
         <footer className="bg-stone-500 grid place-items-center h-24">
