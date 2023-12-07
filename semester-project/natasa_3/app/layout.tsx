@@ -16,9 +16,9 @@ import {faCartShopping,faMagnifyingGlass,faSearch  } from "@fortawesome/free-sol
 
 // Get this info from some external source (e.g. CMS)
 const pages = { 
-  home: "/",  
-  products: "/products",
-  sign_in: "/sign_in", 
+  Home     : "/",  
+  Products : "/products",
+  "Sign in": "/sign_in", 
 };
  
 const inter = Inter({ subsets: ["latin"] });
@@ -41,10 +41,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} >
-        <nav className="flex items-center justify-between p-10">
+        <nav className="flex items-center justify-between p-10 text-black	overflow-hidden">
         
           <div className={notable.className}><Link href="/">The shop</Link></div>
-          <ul className="flex gap-8">
+          <ul className="gap-8 hidden md:flex">
             {Object.entries(pages).map(([name, path]) => (
               <li key={name}>
                 <Link href={path}>{name}</Link>
@@ -61,6 +61,10 @@ export default function RootLayout({
 
         </nav>
         {children}
+
+        <footer className="bg-stone-500 grid place-items-center h-24">
+          Footer
+        </footer>
       </body>
     </html>
   );
