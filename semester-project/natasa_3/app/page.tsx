@@ -65,7 +65,7 @@ export default function Home() {
         <div className="grid place-items-center text-black h-64">
           NEW ARRIVALS
           <div>
-            BE THE FIRST TO SEE WHAT'S NEW
+            BE THE FIRST TO SEE WHAT S NEW
           </div>
         </div>
 
