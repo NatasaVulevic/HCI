@@ -1,13 +1,9 @@
 import Image from "next/image";
 //import styles from "./home.module.css"
 import slika1 from "/public/slika4.png";
-<<<<<<< HEAD
-import Text1 from '@/components/Text1'
-
-import Slike1set from "@/components/Slike1set";
-import Slike2set from "@/components/Slike2set";
-=======
-
+//justify-items-center overflow-hidden w-full h-96 w-screen object-cover h-32 w-screen 
+//flex justify-center p-15 my-20 text-s md:text-xl font-medium gap-10 space-x-4
+//Natasa  
 
 export default function Home() {
 
@@ -15,13 +11,13 @@ export default function Home() {
     <main >
       <div>
          <Image 
-            className="justify-items-center overflow-hidden max-w-full h-96 w-screen object-cover"
+            className="w-full"
             src={slika1}
             alt="Slika" 
           />           
       </div>
 
-      <div className="grid place-items-center max-w-full h-32 w-screen text-black bg-white">
+      <div className="grid place-items-center my-20 text-xl  font-medium ">
         DISCOVER YOUR PERFECT SPACE
       </div>
 
@@ -34,7 +30,7 @@ export default function Home() {
                        sm:grid-cols-1
                        md:grid-cols-2
                        lg:grid-cols-3
-                       xl:grid-cols-4">
+                       xl:grid-cols-4 mx-1.5 mb-12 mt-1"> 
           <Image 
               src="/kitchen.png"
               alt="Kitchen"
@@ -65,9 +61,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-stone-200		 text-black grid overflow-hidden
+      <div className="bg-stone-200 	my-20	 text-black grid overflow-hidden
                        sm:grid-cols-1
-                       md:grid-cols-2">
+                       md:grid-cols-2 "
+                       >
         <div className="grid place-items-center text-black h-64">
           NEW ARRIVALS
           <div>
@@ -85,49 +82,51 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-white">
+      <div >
         
         <div className="p-4 text-black">
           Collection
         </div>
-
-        <div className="grid	 p-2 gap-6 overflow-hidden  justify-items-center
+        
+        <div className="grid	 p-2 gap-6 overflow-hidden  
                        sm:grid-cols-1
                        md:grid-cols-2
                        lg:grid-cols-3
                        xl:grid-cols-4">
+              <div>
           <Image 
               src="/anna.png"
               alt="Anna"
               width={320} 
               height={320}
-          />
-              
+          /> </div>
+              <div>
           <Image 
               src="/donna.png"
               alt="Donna"
               width={320} 
               height={320}
-          />
-              
+          /></div>
+              <div>
           <Image 
               src="/julia.png"
               alt="Julia"
               width={320} 
               height={320}
-          />    
-        </div>
+          />    </div>
+          </div>
+       
       </div>
 
     <div className="bg-stone-200		 text-black grid overflow-hidden
                        sm:grid-cols-1
-                       md:grid-cols-2">
-        <div className="grid place-items-center text-black h-64">
+                       md:grid-cols-2 my-20 h-45" >
+        <div className="grid place-items-center text-black h-64 my-1">
          PROFESSIONAL USE
-          <div>
+          <div className="mb-0.5">
             ELEVATE YOUR BUSINESS
           </div>
-          <div>
+          <div className="my-0.5">
             WITH OUR PROFESSIONAL SOLUTIONS
           </div>
         </div>
@@ -149,7 +148,6 @@ export default function Home() {
 import Text1 from "/components/Text1.tsx";
 import Slike1set from "/components/Slike1set.tsx";
 import Slike2set from "/components/Slike2set.tsx";
->>>>>>> origin/dev
 
 
 
