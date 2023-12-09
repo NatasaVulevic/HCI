@@ -13,15 +13,10 @@ export default function Home() {
   return (
     <main >
       <div>
-         <Image 
-            className="w-full"
-            src={slika1}
-            alt="Slika" 
-          />           
+         <Image  className="w-full" src={slika1} alt="Slika" />                     
       </div>
 
-      <div className="grid place-items-center my-20 font-playfair text-center text-4xl  italic 
-       font-medium ">
+      <div className="grid place-items-center my-20 font-playfair text-center text-4xl italic font-medium ">
         DISCOVER YOUR PERFECT SPACE
       </div>
 
@@ -35,39 +30,15 @@ export default function Home() {
                        md:grid-cols-2
                        lg:grid-cols-3
                        xl:grid-cols-4 mx-1.5 mb-12 mt-1"> 
-          <Image 
-              src="/kitchen.png"
-              alt="Kitchen"
-              width={320} 
-              height={320}
-          />
-              
-          <Image 
-              src="/living-room.png"
-              alt="Living Room"
-              width={320} 
-              height={320}
-          />
-              
-          <Image 
-              src="/bedroom.png"
-              alt="bedroom"
-              width={320} 
-              height={320}
-          />
-              
-          <Image 
-              src="/outdoor.png"
-              alt="Outdoor"
-              width={320} 
-              height={320}
-          />     
-        </div>
+
+          <Image src="/kitchen.png" alt="Kitchen"  width={320}  height={320} />              
+          <Image src="/living-room.png" alt="Living Room" width={320}height={320} />                         
+          <Image src="/bedroom.png" alt="bedroom" width={320}  height={320}/>                   
+          <Image src="/outdoor.png" alt="Outdoor" width={320} height={320}/>              
+        </div>  
       </div>
 
-      <div className=" 	my-20	  grid 
-                       sm:grid-cols-1 
-                       md:grid-cols-2 md:h-96 overflow-hidden">
+      <div className=" 	my-20	 grid sm:grid-cols-1 md:grid-cols-2 md:h-96 overflow-hidden">
 
               <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-72 md:h-full">        
                     <div className="  mt-24 md:mt-32 text-center font-tharlon  ">
@@ -80,24 +51,16 @@ export default function Home() {
                     </div>
               </div> 
               <div >
-                      <Image className="w-full h-80 md:h-96 "
-                            src={slika2}
-                            alt="New Arrival"                   
-                        /> 
+                      <Image className="w-full h-80 md:h-96" src={slika2} alt="New Arrival"  />                          
               </div>
       </div>
-
+      
       <div >
-        
         <div className="font-playfair text-xl font-medium italic m-6">
           COLLECTION
-        </div>
-        
-        <div className="grid	place-items-center   gap-10 overflow-hidden  
-                       sm:grid-cols-1
-                       md:grid-cols-2
-                       lg:grid-cols-3">
-                      
+        </div>        
+        <div className="grid	place-items-center gap-10 overflow-hidden sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                                
               <div>
               <Image 
                   src="/anna.png"
@@ -119,15 +82,12 @@ export default function Home() {
                   width={350} 
                   height={350}
               />    </div>
-          </div>
-       
+          </div>       
       </div>
 
-    <div className=" grid 
-                       sm:grid-cols-1
-                       md:grid-cols-2 my-20  md:h-96  " >
+    <div className=" grid sm:grid-cols-1 md:grid-cols-2 my-20  md:h-96" >
 
-<div className="bg-gradient-to-b from-gray-400 to-gray-100 h-72 md:h-full">
+      <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-72 md:h-full">
         <div className=" mt-24 md:mt-32 text-center font-tharlon   ">
           <div className=" text-xl md:text-2xl font-medium m-8 md:m-10">
             PROFESSIONAL USE
@@ -137,44 +97,17 @@ export default function Home() {
               ELEVATE YOUR BUSINESS<br/>       
               WITH OUR PROFESSIONAL SOLUTIONS
           </div>
-
         </div>
-</div>
-        <div className="justify-items-center max-w-full  w-screen object-cover">
+      </div>
+      
+      <div className="justify-items-center max-w-full  w-screen object-cover">
         <Image className="h-80 md:h-96"
              src={slika3}
-              alt="Professional Use"             
-          /> 
-        </div>
-
-    </div>
-
-    </main>
-  );
-}
-
-  /*      
-import Text1 from "/components/Text1.tsx";
-import Slike1set from "/components/Slike1set.tsx";
-import Slike2set from "/components/Slike2set.tsx";
-
-
-
-export default function Home() {
- 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      <div  className="w-full"  > */
-       {/*  <h1 className="text-3xl font-bold mb-8 text-center">Home page</h1> */}
- /*        <Image className="w-full" src={slika1} alt="Slika" />
-         <Text1/>
-         <Slike1set/>   
-         <Slike2set/>           
-
+              alt="Professional Use"/>           
       </div>
-    </main>
+    </div>
+</main>
   );
 }
-*/
 
-//blllllll
+ 
