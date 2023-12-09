@@ -70,7 +70,7 @@ export default function Home() {
                        md:grid-cols-2 md:h-96 overflow-hidden">
 
               <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-72 md:h-full">        
-                    <div className="  mt-24 md:mt-16 text-center font-tharlon  ">
+                    <div className="  mt-24 md:mt-32 text-center font-tharlon  ">
                           <div className=" text-xl md:text-2xl font-medium m-8 md:m-10 ">
                             NEW ARRIVALS
                           </div>
@@ -128,7 +128,7 @@ export default function Home() {
                        md:grid-cols-2 my-20  md:h-96  " >
 
 <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-72 md:h-full">
-        <div className=" mt-24 md:mt-16 text-center font-tharlon   ">
+        <div className=" mt-24 md:mt-32 text-center font-tharlon   ">
           <div className=" text-xl md:text-2xl font-medium m-8 md:m-10">
             PROFESSIONAL USE
           </div>
