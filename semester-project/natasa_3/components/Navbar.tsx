@@ -50,7 +50,7 @@ const NavBar=()=>{
 
           </ul>
           <div className="hidden md:visible" >
-             <Link href="/search"> <FontAwesomeIcon icon={faMagnifyingGlass}/> </Link> 
+             <Link href="/search"> <FontAwesomeIcon className="hidden md:visible" icon={faMagnifyingGlass}/> </Link> 
           </div> 
   </nav>
 
