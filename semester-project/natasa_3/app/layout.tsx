@@ -38,12 +38,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=/* {inter.className} */ /* bg-gradient-to-b from-current to-transparent bg-blue-900/90 */ "bg-white"  >
+      <body className=/* {inter.className} */ /* bg-gradient-to-b from-current to-transparent bg-blue-900/90 */ "bg-sky-950/10"  >
         <Navbar/>
         {children}
 
         <footer className=" bg-slate-800 text-white" >
       <div className=" grid grid-cols-2 md:grid-cols-5 ">
+
         <FooterItem title={"ABOUT US"} content={["About us", "Join our team"]}/>
         <FooterItem title={"CUSTOMER SERVICE"} content={["Customer information", "Delivery","Returns"]}/>
         <FooterItem title={"CONTACT"} content={["Contact us", "Find store","Book appointment","As a professional"]}/>

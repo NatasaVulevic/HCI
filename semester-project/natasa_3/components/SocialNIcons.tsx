@@ -8,9 +8,9 @@ import slika33 from "/public/image 11.png";
 const SocialnIcons=()=>{
     return(
         <div className="flex  ">
-        <Image  className="h-10 w-10 m-4" src= {slika11} alt="link"/>
-        <Image className="h-10 w-10 m-4" src= {slika22} alt="facebook"/>
-        <Image className="h-10 w-10 m-4" src= {slika33} alt="instagram"/>
+        <Image  className="h-8 w-8 md:m-4 m-3" src= {slika11} alt="link"/>
+        <Image className="h-8 w-8 md:m-4 m-3" src= {slika22} alt="facebook"/>
+        <Image className="h-8 w-8 md:m-4 m-3" src= {slika33} alt="instagram"/>
         </div>
     );
 };
