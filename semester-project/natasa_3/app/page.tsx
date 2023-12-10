@@ -1,11 +1,8 @@
 import Image from "next/image";
-//import styles from "./home.module.css"
-import slika1 from "/public/slika4.png";
-//justify-items-center overflow-hidden w-full h-96 w-screen object-cover h-32 w-screen 
-//flex justify-center p-15 my-20 text-s md:text-xl font-medium gap-10 space-x-4
-//Natasa  
+import slika1 from "/public/slika4.png"; 
 import slika2 from "/public/new-arrival.png";
 import slika3 from "/public/professional-use.png";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -51,7 +48,7 @@ export default function Home() {
                     </div>
               </div> 
               <div >
-                      <Image className="w-full h-80 md:h-96" src={slika2} alt="New Arrival"  />                          
+                  <Image className="w-full h-80 md:h-96" src={slika2} alt="New Arrival"  />                          
               </div>
       </div>
       
@@ -62,26 +59,23 @@ export default function Home() {
         <div className="grid	place-items-center gap-10 overflow-hidden sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                 
               <div>
-              <Image 
-                  src="/anna.png"
-                  alt="Anna"
-                  width={350} 
-                  height={350}/>
-               </div>
+                <Image src="/anna.png"
+                    alt="Anna"
+                    width={350} 
+                    height={350}/>
+              </div>
               <div>
-              <Image 
-                  src="/donna.png"
-                  alt="Donna"
-                  width={350} 
-                  height={350}
-              /></div>
-              <div>
-              <Image 
-                  src="/julia.png"
+                <Image src="/donna.png"
+                    alt="Donna"
+                    width={350} 
+                    height={350} />
+              </div>
+             <Link href="/products">   <div>
+              <Image src="/julia.png"
                   alt="Julia"
                   width={350} 
-                  height={350}
-              />    </div>
+                  height={350}/>               
+                </div></Link> 
           </div>       
       </div>
 
@@ -99,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
       <div className="justify-items-center max-w-full  w-screen object-cover">
         <Image className="h-80 md:h-96"
              src={slika3}

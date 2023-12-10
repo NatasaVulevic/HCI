@@ -7,7 +7,6 @@ import Logo from './Logo';
 import { useState } from "react";
 import Hamburger from "@/components/Hamburger";
 import MobileNavbar from "@/components/MobileNavbar";
-import { cn } from "@/lib/utils";
 
 
 export type Page = {
@@ -25,22 +24,23 @@ const NavBar=()=>{
 
   return (
   <nav className="flex items-center justify-between p-10 bg-gray-300 h-12 md:h-18">
-      <div><Logo/></div>      
+      <div className="hover:text-xl"><Logo/></div>      
      <ul className="hidden md:flex md:gap-8">     
 
          {pages.map(({ href, title }) => (
           <li key={href}>
-            <Link  className="uppercase font-medium text-slate-950 text-xl" href={href}>             
-              {title}
+            <Link  className="uppercase font-medium text-slate-950 text-xl hover:text-xl  " href={href}>  
+            <div className="p-2 hover:bg-stone-200">          
+              {title}</div> 
               </Link> 
             </li>
           ))}             
       </ul>
       
       <ul className="flex gap-4 md:gap-8"> 
-        <li><Link className=/* {cn("hidden",{"md":{hidden:false}})} */"invisible md:visible" href="/search"> <FontAwesomeIcon  icon={faMagnifyingGlass}/> </Link> </li>
-        <li> <Link  href="/likes"> <FontAwesomeIcon icon={faHeart}/> </Link></li>
-        <li> <Link href="/cart"> <FontAwesomeIcon icon={faCartShopping}/> </Link></li>        
+        <li><Link className="invisible md:visible hover:text-xl" href="/search"> <FontAwesomeIcon  icon={faMagnifyingGlass}/> </Link> </li>
+        <li> <Link className="hover:text-xl"  href="/likes"> <FontAwesomeIcon icon={faHeart}/> </Link></li>
+        <li> <Link className="hover:text-xl" href="/cart"> <FontAwesomeIcon icon={faCartShopping}/> </Link></li>        
        
 
       <Hamburger  open={open} clickHandler={setOpen}/> </ul> 
