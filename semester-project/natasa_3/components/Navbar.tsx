@@ -29,7 +29,7 @@ const NavBar=()=>{
 
          {pages.map(({ href, title }) => (
           <li key={href}>
-            <Link  className="uppercase font-medium text-slate-950 text-xl hover:text-xl  " href={href}>  
+            <Link  className="uppercase font-medium text-slate-950 text-xl hover:text-2xl  " href={href}>  
             <div className="p-2 hover:bg-stone-200">          
               {title}</div> 
               </Link> 
