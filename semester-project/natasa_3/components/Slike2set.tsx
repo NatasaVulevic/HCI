@@ -11,11 +11,8 @@ const Slike2set=()=>{
         
         {/* <Image className=" ms:hidden md:h-80 " src={slika6} alt="slika"/> */}
         <Image className="ms:h-40 md:h-80 md:flex-1" src={slika7} alt="slika"/>
-        <Image className="ms:h-40  md:h-80 md:flex-1" src={slika8} alt="slika"/>
-
-     
+        <Image className="ms:h-40  md:h-80 md:flex-1" src={slika8} alt="slika"/>     
     </div>
-    )
-    
+    )    
 }
 export default Slike2set;

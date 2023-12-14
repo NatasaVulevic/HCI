@@ -55,26 +55,27 @@ export default function Home() {
       <div >
         <div className="font-playfair text-xl font-medium italic m-6">
           COLLECTION
-        </div>        
-        <div className="grid	place-items-center gap-10 overflow-hidden sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        </div>    
+
+        <div className="grid	place-items-center mx-4 gap-2 overflow-hidden sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                                 
               <div>
                 <Image src="/anna.png"
                     alt="Anna"
-                    width={350} 
-                    height={350}/>
+                    width={420} 
+                    height={420}/>
               </div>
               <div>
                 <Image src="/donna.png"
                     alt="Donna"
-                    width={350} 
-                    height={350} />
+                    width={420} 
+                    height={420} />
               </div>
              <Link href="/products">   <div>
               <Image src="/julia.png"
                   alt="Julia"
-                  width={350} 
-                  height={350}/>               
+                  width={420} 
+                  height={420}/>               
                 </div></Link> 
           </div>       
       </div>

@@ -15,7 +15,8 @@ const pages = {
   logo:"/",
   home: "/",  
   products: "/products",
-  sign_in: "/sign_in", 
+  sign_in: "/sign_in",
+  products1:"/products1"
 };
  
 const inter = Inter({ subsets: ["latin"] });
