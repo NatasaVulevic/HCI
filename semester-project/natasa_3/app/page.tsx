@@ -8,17 +8,17 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main className="text-gray-800" >
+    <main className="text-gray-900" >
       <div>
          <Image  className="w-full" src={slika1} alt="Slika" />                     
       </div>
 
-      <div className="grid place-items-center mt-28 mb-16 font-playfair text-center text-4xl italic font-medium text-gray-800 ">
+      <div className="grid place-items-center mt-28 mb-16 font-playfair text-center text-4xl italic font-medium text-gray-900 ">
         DISCOVER YOUR PERFECT SPACE
       </div>
 
       <div >
-        <div className="font-playfair text-2xl font-medium italic mb-8 ms-6 text-gray-800">
+        <div className="font-playfair text-2xl font-medium italic mb-8 ms-6 text-gray-900">
           PRODUCTS
         </div>
 

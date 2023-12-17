@@ -27,7 +27,7 @@ const NavBar=()=>{
    ];  
 
   return (
-  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl text-gray-800">
+  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl text-gray-900 bg-sky-950/10">
       <div className="hover:bg-stone-100 p-2 scale-200"><Logo/></div> 
     < Products2 open={open1} clickHandler={setOpen1} /> 
      <ul className="hidden md:flex  md:gap-8"> 
