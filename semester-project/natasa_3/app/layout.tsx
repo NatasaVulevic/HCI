@@ -14,9 +14,9 @@ import SocialnIcons from "@/components/SocialNIcons";
 const pages = { 
   logo:"/",
   home: "/",  
-  products: "/products",
+  //products: "/products",
   sign_in: "/sign_in",
-  products1:"/products1"
+  //products1:"/products1"
 };
  
 const inter = Inter({ subsets: ["latin"] });
@@ -39,15 +39,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=/* {inter.className} */ /* bg-gradient-to-b from-current to-transparent bg-blue-900/90 */ "bg-sky-950/10"  >
+      <body className= "bg-sky-950/10"  >
         <Navbar/>
         {children}
 
         <footer className=" bg-slate-800 text-white" >
       <div className=" grid grid-cols-2 md:grid-cols-5 ">
 
-        <FooterItem title={"ABOUT US"} content={["About us", "Join our team"]}/>
-        <FooterItem title={"CUSTOMER SERVICE"} content={["Customer information", "Delivery","Returns"]}/>
+     <div className="md:ml-0">   <FooterItem title={"ABOUT US"} content={["About us", "Join our team"]}/> </div>
+     <div className="md:mr-0">      <FooterItem title={"CUSTOMER SERVICE"} content={["Customer information", "Delivery","Returns"]}/></div>
         <FooterItem title={"CONTACT"} content={["Contact us", "Find store","Book appointment","As a professional"]}/>
        
           <div className=" w-3/12 items-end m-4 grid col-start-2 col-end-3 md:col-start-5 md:col-end-6">

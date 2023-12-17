@@ -21,20 +21,20 @@ const NavBar=()=>{
 
   const pages : Page[]= [    
     {href: "/",  title:"home" } ,  
-    {href:"/products", title:"products"},
+    /* {href:"/products", title:"products"}, */
     {href: "/sign_in", title:"sign in "},
    /*  {href:"/products1", title:"products1"},*/
    ];  
 
   return (
-  <nav className="flex items-center justify-between p-6 md:p-10 bg-stone-300 h-24 md:h-18">
-      <div className="hover:bg-stone-100 p-2"><Logo/></div> 
+  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl">
+      <div className="hover:bg-stone-100 p-2 scale-200"><Logo/></div> 
     < Products2 open={open1} clickHandler={setOpen1} /> 
-     <ul className="hidden md:flex md:gap-8"> 
+     <ul className="hidden md:flex  md:gap-8"> 
          {pages.map(({ href, title }) => (
           <li key={href}>
-            <Link  className="uppercase font-medium text-slate-950 text-xl  " href={href}>  
-            <div className="p-2 hover:bg-stone-100">          
+            <Link  className="uppercase font-medium text-slate-950   " href={href}>  
+            <div className="p-2 hover:bg-stone-100 font-roboto-condensed text-xl ">          
               {title}</div> 
               </Link> 
             </li>
@@ -50,7 +50,7 @@ const NavBar=()=>{
 
       <Hamburger  open={open} clickHandler={setOpen}/> 
 
-      <MobileNavbar  pages={pages} open={open} clickHandler={setOpen}/></ul> 
+      <MobileNavbar  pages={pages} open={open} clickHandler={setOpen} openProducts1={open1} clickHandlerProducts1={setOpen1}/></ul> 
   </nav>
 );};
 
@@ -61,7 +61,4 @@ export default NavBar;
 
 
    
-   {/*  {Object.entries(pages).map(([name, path]) => (
-          <li key={name}>
-            <Link className="uppercase font-medium text-slate-950 text-xl" href={path}>{name} </Link>
-          </li>))}    */}  
+  
