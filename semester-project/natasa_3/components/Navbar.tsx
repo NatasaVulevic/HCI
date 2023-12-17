@@ -27,14 +27,14 @@ const NavBar=()=>{
    ];  
 
   return (
-  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl">
+  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl text-gray-800">
       <div className="hover:bg-stone-100 p-2 scale-200"><Logo/></div> 
     < Products2 open={open1} clickHandler={setOpen1} /> 
      <ul className="hidden md:flex  md:gap-8"> 
          {pages.map(({ href, title }) => (
           <li key={href}>
             <Link  className="uppercase font-medium text-slate-950   " href={href}>  
-            <div className="p-2 hover:bg-stone-100 font-roboto-condensed text-xl ">          
+            <div className="px-5 py-3 hover:bg-stone-100 font-roboto-condensed text-xl ">          
               {title}</div> 
               </Link> 
             </li>

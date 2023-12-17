@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main >
+    <main className="text-gray-800" >
       <div>
          <Image  className="w-full" src={slika1} alt="Slika" />                     
       </div>
