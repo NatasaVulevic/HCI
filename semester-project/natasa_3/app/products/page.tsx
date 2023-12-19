@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -120,3 +121,27 @@ export default async function Blog({searchParams,}:
   );
 }
 
+=======
+import { client } from '@/lib/contentful/client'
+
+function Kitchen_elements({product}) {
+    console.log(product);
+    return (
+        <main className="flex justify-center text-4xl p-14">
+            <h1>ghjhvgj</h1>
+        </main>
+    );
+}
+
+export async function getStaticProps() {
+    const res = await client.getEntries({ content_type: 'product' })
+
+    return {
+        props: {
+            product: res.items
+        }
+    }
+}
+
+export default Kitchen_elements;
+>>>>>>> Stashed changes
