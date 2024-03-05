@@ -22,18 +22,18 @@ import { usePathname } from "next/navigation";
         onMouseLeave={() =>setOpen(false)} >
                All
         </div></Link> 
-        <Link href="/kuhinja">  <div className={cn("text-xl px-5 py-2 round-sm  bg-slate-400 hover:text-white apsolute hover:bg-blue-900", {hidden: !open},
-            {"bg-blue-900 text-white":usePathname()==="/kuhinja"}
+        <Link href="/kitchen">  <div className={cn("text-xl px-5 py-2 round-sm  bg-slate-400 hover:text-white apsolute hover:bg-blue-900", {hidden: !open},
+            {"bg-blue-900 text-white":usePathname()==="/kitchen"}
         )} onMouseEnter={() => setOpen(true)}
         onMouseLeave={() =>setOpen(false)} >
                Kitchen
         </div></Link>
-        <Link href="/spavaca_soba">  <div className={cn("text-xl px-5 py-2 round-sm  bg-slate-400 hover:text-white apsolute hover:bg-blue-900 overflow-visible", {hidden: !open}
+        <Link href="/bedroom">  <div className={cn("text-xl px-5 py-2 round-sm  bg-slate-400 hover:text-white apsolute hover:bg-blue-900 overflow-visible", {hidden: !open}
         )} onMouseEnter={() => setOpen(true)}
         onMouseLeave={() =>setOpen(false)} >
                Bedroom
         </div></Link>
-        <Link href="/dnevni_boravak"><div className={cn("object-fill text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white apsolute hover:bg-blue-900 ",
+        <Link href="/living_room"><div className={cn("object-fill text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white apsolute hover:bg-blue-900 ",
          {hidden: !open}
         )} onMouseEnter={() => setOpen(true)}
         onMouseLeave={() =>setOpen(false)} >
