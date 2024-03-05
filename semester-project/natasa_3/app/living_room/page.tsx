@@ -10,12 +10,12 @@ function Dnevni_boravak() {
     return (
     <div className="px-6 py-6 grid grid-cols-3 grid-rows-2">      
 
-        <Proizvod slika={slika21}  nazivProizvoda="Kuhinja Zara" cijena="10000 $"/> 
+      {/*   <Proizvod slika={slika21}  nazivProizvoda="Kuhinja Zara" cijena="10000 $"/> 
         <Proizvod slika={slika22}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
         <Proizvod slika={slika23}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
         <Proizvod slika={slika24}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
         <Proizvod slika={slika25}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
-        <Proizvod slika={slika26}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
+        <Proizvod slika={slika26}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> */} 
          </div>
   );
 } 
