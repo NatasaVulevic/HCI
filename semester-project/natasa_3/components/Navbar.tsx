@@ -8,7 +8,11 @@ import { useState } from "react";
 import Hamburger from "@/components/Hamburger";
 import MobileNavbar from "@/components/MobileNavbar";
 import Products1 from "@/components/Products1";
-import Products2 from "@/components/Products2";
+import Search_bar from "./Search_bar";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+
+
 
 export type Page = {
   href: string;
@@ -18,39 +22,37 @@ export type Page = {
 const NavBar=()=>{ 
   const[open, setOpen]=useState(false);
   const[ open1, setOpen1]=useState(false);
-
+  
   const pages : Page[]= [    
     {href: "/",  title:"home" } ,  
     /* {href:"/products", title:"products"}, */
     {href: "/sign_in", title:"sign in "},
-   /*  {href:"/products1", title:"products1"},*/
-   ];  
-
+   /*  {href:"/products1", title:"products1"},*/ ];   
+  
   return (
-  <nav className="flex items-center justify-between p-6 md:p-10 md:h-24 md:h-18 w-full text-xl text-gray-900 bg-sky-950/10">
+  <nav className=" flex justify-between p-6 w-full text-xl text-gray-900 bg-slate-400  ">
       <div className="hover:bg-stone-100 p-2 scale-200"><Logo/></div> 
-    < Products2 open={open1} clickHandler={setOpen1} /> 
-     <ul className="hidden md:flex  md:gap-8"> 
-         {pages.map(({ href, title }) => (
-          <li key={href}>
-            <Link  className="uppercase font-medium text-slate-950   " href={href}>  
-            <div className="px-5 py-3 hover:bg-stone-100 font-roboto-condensed text-xl ">          
-              {title}</div> 
-              </Link> 
-            </li>
-          ))}  
-        < Products1 open={open1} clickHandler={setOpen1} />         
-
-      </ul>
-      
-      <ul className="flex items-center gap-4 md:gap-8"> 
-        <li><Link className="invisible md:visible hover:bg-stone-100 p-2" href="/search"> <FontAwesomeIcon  icon={faMagnifyingGlass}/> </Link> </li>
-        <li> <Link className="hover:bg-stone-100 p-2"  href="/likes"> <FontAwesomeIcon icon={faHeart}/> </Link></li>
-        <li> <Link className="hover:bg-stone-100 p-2" href="/cart"> <FontAwesomeIcon icon={faCartShopping}/> </Link></li>        
-
-      <Hamburger  open={open} clickHandler={setOpen}/> 
-
-      <MobileNavbar  pages={pages} open={open} clickHandler={setOpen} openProducts1={open1} clickHandlerProducts1={setOpen1}/></ul> 
+    
+          <div className="relative right-16 invisible xl:visible  ">                        
+                <Products1/>
+           </div> 
+            <div className="m-1  hidden xl:inline relative left-12 "><Search_bar/></div>
+            
+              <div className="xl:flex flex-row uppercase justify-between   hidden items-end">
+                <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                    {"bg-blue-900 text-white":usePathname()==="/"})} >Home</div></Link>
+                <Link href="/about" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                    {"bg-blue-900 text-white":usePathname()==="/about"})} >About</div></Link>
+                  
+                <Link href="/wishlist"><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                    {"bg-blue-900 text-white":usePathname()==="/wishlist"})}  >Wishlist</div></Link>
+                <Link href="/cart"><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                    {"bg-blue-900 text-white":usePathname()==="/cart"})}  >Cart</div></Link>
+              </div>
+          <div className="apsolute right-0"> <Hamburger  open={open1} setOpen={setOpen1}/> </div> 
+            <MobileNavbar  open={open1} setOpen={setOpen1} /> 
+          
+    
   </nav>
 );};
 

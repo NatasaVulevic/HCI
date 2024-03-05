@@ -1,110 +1,133 @@
 import Image from "next/image";
-import slika1 from "/public/slika4.png"; 
-import slika2 from "/public/new-arrival.png";
+import slika1 from "/public/dnne.jpg";
+import slika4 from "/public/d5.jpg";
+import slika5 from "/public/760x510_copy_2_blog_6500213eb865c.jpg";
+import slika6 from "/public/dddddd3.jpg";
+import slika7 from "/public/bed6.jpg";
+
+import {Inter,Roboto, Roboto_Condensed,
+  Playfair_Display,
+} from "next/font/google";
+
+import { cn } from "@/lib/utils";
+
+import slika2 from "/public/dnevni.jpeg";
 import slika3 from "/public/professional-use.png";
 import Link from "next/link";
-//flex flex-col justify-center
-
+//flex flex-col justify-center font-playfair w-1/2 w-1/2 scale-x-125  mt-28 mb-16 
+const roboto_condensed = Roboto_Condensed({
+  weight: ["300", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto-condensed",
+});
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "800"],
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+const roboto = Roboto({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+//
 export default function Home() {
-
   return (
     <main className="text-gray-900" >
-      <div>
-         <Image  className="w-full" src={slika1} alt="Slika" />                     
+
+         <div className="flex justify-center my-24 h-1/2">          
+              <Image  className=" xl:scale-x-150 " src={slika1} alt="Slika"  />           
+      </div>     
+     
+    <div className="flex justify-center ">
+      <div className=" bg-white h-84 w-5/6">
+         <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 m-12 ", 
+                          playfairDisplay.className)}>
+            Discover your perfect space
+          </div>
+          <div className=" flex justify-center items-center lg:text-xl  md:text-lg px-10">Welcome to Nateo, where style meets comfort, and every piece of furniture
+            tells a story. Step into a world of curated designs and timeless elegance, carefully selected to transform your living spaces into expressions of
+            your unique personality.
+            At Nateo, we understand that furniture is more than just a functional necessity it&apos;s an integral part of your lifestyle.
+          </div>
+         <div className="flex justify-center">
+        <Link  className="  mt-6 mb-6 " href="/about" >
+          <button className="px-5 py-2  grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+            Discover more</button></Link></div> 
+      </div>       
       </div>
 
-      <div className="grid place-items-center mt-28 mb-16 font-playfair text-center text-4xl italic font-medium text-gray-900 ">
-        DISCOVER YOUR PERFECT SPACE
-      </div>
 
-      <div >
-        <div className="font-playfair text-2xl font-medium italic mb-8 ms-6 text-gray-900">
-          PRODUCTS
+     <div className={cn("p-12  bg-blue-950/60 mt-20 mb-24 " )} >      
+      <div className="grid 	gap-10 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
+
+        <div className=" flex flex-col justify-center content-center ">
+          <Link  href="/proizvodi">  
+              <Image src={slika5} alt="Kitchen" className="  " />
+           </Link> 
+                 <div className="flex justify-center">
+          <Link  className="" href="/kitchen" >
+              <button className={cn("px-12 py-2 mt-6 bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110")}>
+              Kitchen
+              </button>
+          </Link>  </div>
         </div>
 
-        <div className="grid justify-items-center	gap-6 overflow-hidden sm:grid-cols-1
-                       md:grid-cols-2
-                       lg:grid-cols-3  xl:grid-cols-4 mx-1.5 mb-24 mt-1"> 
+     <div>
+       <Link  href="">  
+            <Image src={slika7} alt="Bed Room" className="  " /> 
+       </Link>        
+          <div className="flex  justify-center">       
+       <Link  className="" href="/spavaca_soba" >
+          <button className="px-12 py-2 mt-6   bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+          Bedroom
+          </button>
+       </Link></div> 
+    </div>  
 
-<Link  className="hover:scale-105" href="">     <Image src="/kitchen.png" alt="Kitchen"  width={320}  height={320} />    </Link>          
-<Link  className="hover:scale-105" href="">         <Image src="/living-room.png" alt="Living Room" width={320}height={320} />   </Link>                      
-<Link  className="hover:scale-105" href="">          <Image src="/bedroom.png" alt="bedroom" width={320}  height={320}/>      </Link>             
-<Link  className="hover:scale-105" href="">          <Image src="/outdoor.png" alt="Outdoor" width={320} height={320}/>   </Link>           
-        </div>  
+       
+     <div className="md:relative md:left-1/2 xl:static"  > 
+      <Link  href=""> 
+         <Image src={slika6} alt="livingroom" className=" 
+          "  /> 
+      </Link> 
+      <div className="flex justify-center  ">
+        
+     <Link  className="" href="/" >
+          <button className="px-12 py-2 mt-6  bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+           Living room
+          </button>
+      </Link>      
+    </div></div> 
+      </div>  
+     </div> 
 
-      </div>
+  
+      <div className="flex lg:flex-row flex-col mt-24 mb-24 lg:mx-10  mx-12 ">
+        <div className="lg:w-1/2 bg-white  w-full md:h-96">
+          <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 m-8 md:m-10 lg:m-8 ", 
+                          playfairDisplay.className)}>
+            New Arrivals
+          </div>
+          <div className=" flex justify-center items-center xl:text-xl md:text-lg px-10">
+            Don&apos;t miss the chance to be ahead of the curve.Explore our New Arrivals and make a statement with pieces that reflect your distinctive
+            taste. Because when it comes to style, being on-trend has never been so effortless. Welcome the new, and welcome a fresh perspective
+            to your home.
+          </div>
+            <div className="flex justify-center">
+            <Link  className="px-5 mt-5 mb-4 xl:mt-8" href="/about" >
+              <button className="px-5 py-2 mt-1 grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+                See what&apos;s new</button></Link>
+            </div>    
+          </div>
 
-      <div className=" 	my-36	 grid sm:grid-cols-1 md:grid-cols-2 md:h-96 overflow-hidden md:scale-y-110">   
-           {/*  <Link href="" className="h-72 md:h-full"> */}
-              <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-80 md:h-96 ">     
-              <Link  href="">  
-                    <div className="md:scale-y-90 items-center text-center mt-24 md:mt-32  font-tharlon  hover:scale-105">
-                          <div className=" text-xl md:text-2xl font-medium m-8 md:m-10 ">
-                            NEW ARRIVALS
-                          </div>
-                          <div className="text-l md:text-xl  ">
-                            BE THE FIRST TO SEE WHAT S NEW
-                          </div>
-                    </div></Link>
+        <div className="lg:w-1/2 w-full "> <Image className="object-fit lg:h-96 h-80 md:h-96" src={slika2} alt="New Arrival" /></div>
 
-              </div> 
-              <div >
-                <Image className="w-full h-80 md:h-96" src={slika2} alt="New Arrival"  />                       
-              </div>
-      </div>
-      
-      <div className="my-24 " >
-        <div className="font-playfair text-2xl font-medium italic mb-8 ms-6 text-gray-800">
-          COLLECTIONS
-        </div>    
-
-        <div className="grid	place-items-center mx-4 gap-2 overflow-hidden sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                                
-              <div>
-               <Link  href="">   <Image className="scale-90 md:scale-100 hover:scale-105" src="/anna.png" 
-                    alt="Anna"
-                    width={420} 
-                    height={420}/> </Link>  
-              </div>
-              <div>
-              <Link  href="">   <Image className="scale-90 md:scale-100 hover:scale-105" src="/donna.png"
-                    alt="Donna"
-                    width={420} 
-                    height={420} /></Link>
-
-              </div>
-             <Link href="/products">   <div>
-              <Image className="scale-90 md:scale-100 hover:scale-105" src="/julia.png"
-                  alt="Julia"
-                  width={420
-                  } 
-                  height={420}/>               
-                </div></Link> 
-          </div>       
-      </div>
-
-    <div className=" grid sm:grid-cols-1 md:grid-cols-2 my-36 w-full md:h-1/2 md:scale-y-110 " >
-    
-           <div className="bg-gradient-to-b from-gray-400 to-gray-100 h-80 md:h-full overflow:hidden  ">   
-
-       <Link href= "" >     <div className=" mt-24 md:mt-32 text-center font-tharlon hover:scale-105 md:scale-y-90 ">
-                <div className=" text-xl md:text-2xl font-medium m-8 md:m-10 ">
-                  PROFESSIONAL USE
-                </div>
-                <div className="text-l md:text-xl">
-                    ELEVATE YOUR BUSINESS<br/>       
-                    WITH OUR PROFESSIONAL SOLUTIONS
-                </div>
-              </div> </Link> 
-        </div> 
-
-        <div>
-            <Image className="h-80 md:h-96 w-full " src={slika3}  alt="Professional Use"/>          
-        </div>
-      
     </div>
+      
+  
 </main>
   );
 }
 
- 
+ //lg:text-xl  md:text-lg px-10

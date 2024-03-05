@@ -7,7 +7,7 @@ const notable = Notable({
 
 function Logo(){  
     return (
-        <div className={notable.className}>
+        <div className={notable.className} >
            The shop
         </div>
     );

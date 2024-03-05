@@ -8,48 +8,41 @@ import {faCartShopping,faMagnifyingGlass,faSearch  } from "@fortawesome/free-sol
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import Products2 from "./Products2";
-//bg-gray-300
+import Products1 from "./Products1";
+import Search_bar from "./Search_bar";
 
 
 
 
-const MobileNavbar=({ pages, open, clickHandler,openProducts1,clickHandlerProducts1 }:{pages:Page[], open:boolean,
-    clickHandler:Dispatch<SetStateAction<boolean>>,
-    openProducts1:boolean, clickHandlerProducts1:Dispatch<SetStateAction<boolean>>})=>{  
+const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAction<boolean>>,
+   })=>{  
     const pathname=usePathname();
-    
+   
+   
     return(    
            
-        <nav  className={cn("flex md:hidden items-center justify-center p-20 w-screen absolute text-xl top-0 right-0 z-20  bg-stone-300 opacity-95",
-          { hidden: !open })}   >
-            
-        <ul className="flex flex-col text-xl gap-8 items-center">
-            {pages.map(({ href, title }) => (
-                <li key={href}>
-                    <Link href={href}>
-                        <span className={ cn ("uppercase text-xl whitespace-nowrap font-roboto-condensed  px-5 py-3 hover:bg-stone-100",
-                         /*    {"bg-stone-700 text-black pointer-events-none":pathname === href,} */ )}> 
-                            {title}
-                        </span>                    
-                    </Link>                               
-                </li> ))}      
-             
-                <li>  
-                     <span className={ cn ("uppercase whitespace-nowrap font-roboto-condensed  px-5 py-3 hover:bg-stone-100" )}
-                         onClick={ ()=>(clickHandlerProducts1(!openProducts1) )}  > 
-                        products
-                    </span> 
-                </li> 
-        
-
-                
+        <nav  className={cn("flex flex-col bg-slate-400 xl:hidden items-center justify-center p-10 w-screen absolute text-xl top-0 right-0 z-20  ",
+                            { hidden: !open })}  
+                           /*  onMouseLeave={() =>setOpen(false)} */ onClick={()=>setOpen(false)}>     
   
-            <li><Link className="hover:bg-stone-100 p-2" href="/search"> <FontAwesomeIcon  icon={faMagnifyingGlass}/> </Link> </li>
-        </ul>  
+          <div className="mb-6"><Search_bar/></div>
+
+            <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                {"bg-blue-900 text-white":usePathname()==="/"})} >Home</div></Link>             
+                    
+           <Link href="/about" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm z-20",
+                {"bg-blue-900 text-white":usePathname()==="/about"})} >About</div></Link>
+              
+            <Link href="/wishlist"><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                {"bg-blue-900 text-white":usePathname()==="/wishlist"})}  >Wishlist</div></Link>
+            <Link href="/cart"><div className={cn("px-5 py-2 m-1 mb-6 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
+                {"bg-blue-900 text-white":usePathname()==="/cart"})}  >Cart</div></Link>
+             <div className=" self-center  relative right-16"> <Products1/>  </div>  
+             <div className="h-6"></div>
+         
         <XMarkIcon className={cn(" w-8 h-8 text-black m-6 absolute top-0 right-0 z-20 hover:bg-stone-100", { hidden: !open })} 
-            onClick= {() => clickHandler(!open)}/> 
-              < Products2 open={openProducts1} clickHandler={clickHandlerProducts1} /> 
+            onClick= {() => setOpen(!open)}/> 
+            
     </nav>  
 
    
