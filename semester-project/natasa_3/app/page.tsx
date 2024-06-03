@@ -58,7 +58,7 @@ export default function Home() {
       </div>
 
 
-     <div className={cn("p-12  bg-blue-950/60 mt-20 mb-24 " )} >      
+     <div className={cn("p-12  bg-blue-950/60 mt-20 mb-24 mx-4" )} >      
       <div className="grid 	gap-10 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
 
         <div className=" flex flex-col justify-center content-center ">

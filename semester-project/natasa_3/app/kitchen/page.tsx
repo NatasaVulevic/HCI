@@ -21,13 +21,8 @@ interface Type{
  import slika24 from "/public/slika_kuh4.jpg"; 
  import slika25 from "/public/slikakuh5.jpg"; 
  import slika26 from "/public/slikakuh6.jpg"; 
-
-
-
 export default Kuhinja; */
 //const proizvodi  =  GetAll();
-console.log("Tam tam tam tam 10000");
-
 
  const  Kuhinja=async ()=>{
  // const proizvodi  = await GetAll();
@@ -41,8 +36,7 @@ console.log("Tam tam tam tam 10000");
   //const Kuhinja_proizvodi= proizvodi.Kuhinja_proizvodi;
   const Kuhinja_proizvodi= proizvodi.Kuhinja_proizvodi;
 
-  console.log("bla"); 
-
+  
  //console.log(Kuhinja_proizvodi); 
 
  return(

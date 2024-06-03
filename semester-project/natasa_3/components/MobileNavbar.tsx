@@ -16,8 +16,7 @@ import Search_bar from "./Search_bar";
 
 const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAction<boolean>>,
    })=>{  
-    const pathname=usePathname();
-   
+    const pathname=usePathname();  
    
     return(    
            
@@ -25,7 +24,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
                             { hidden: !open })}  
                            /*  onMouseLeave={() =>setOpen(false)} */ onClick={()=>setOpen(false)}>     
   
-          <div className="mb-6"><Search_bar/></div>
+          <div className="mb-6 mt-5"><Search_bar/></div>
 
             <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
                 {"bg-blue-900 text-white":usePathname()==="/"})} >Home</div></Link>             
