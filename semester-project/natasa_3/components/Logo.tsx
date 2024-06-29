@@ -1,17 +1,11 @@
-import { Notable } from 'next/font/google';
-import { cn } from "@/lib/utils";
+import Image from "next/image";
+import slika31 from "/public/logo4.jpg";
+import Link from "next/link";
 
-
-const notable = Notable({
-    weight: '400',
-    subsets: ['latin'],
- })
 
 const Logo=()=>{
-    return(
-        <div className={notable.className}>
-        The shop
-     </div>
+    return(       
+      <Link href="/"> <Image  className="h-20 w-28 rounded-md" src= {slika31} alt="link"/> </Link>     
     )
 }
 export default Logo;

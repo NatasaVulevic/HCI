@@ -39,7 +39,8 @@ const getAllProducts=`query Item{
 //const CONTENTFUL_ACCESS_TOKEN="AaDtne2bnrpGWYEa9OIFmyotLeKQMvPNFXFYMZbexsI";  
 
 
-const baseUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`;
+//const baseUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`;
+const baseUrl=`https://graphql.contentful.com/content/v1/spaces/hjr7l21mjzcg/environments/master`
 const GetAll = async ():Promise<Type[]> => {
     try {
       const response = await fetch(baseUrl, {

@@ -17,7 +17,7 @@ import { usePathname } from "next/navigation";
        
         <button
            onClick={ ()=>setOpen(!open) } onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() =>setOpen(false)} className={cn(" uppercase text-xl px-5 py-2 text-blue-950 border-2 border-blue-900 round-sm rounded-sm mt-1 ",{"bg-blue-900 text-white":open===true },
+            onMouseLeave={() =>setOpen(false)} className={cn(" uppercase text-xl px-5 py-2 text-blue-950 border-2 border-blue-900 round-sm rounded-sm  ",{"bg-blue-900 text-white":open===true },
                  pages.map( (a)=>{ return(   {"bg-blue-900 text-white":pathname===a} ) })     
             )}           
              > Products

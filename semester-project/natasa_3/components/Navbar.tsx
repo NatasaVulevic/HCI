@@ -12,8 +12,6 @@ import Search_bar from "./Search_bar";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
-
-
 export type Page = {
   href: string;
   title: string;
@@ -30,15 +28,15 @@ const NavBar=()=>{
    /*  {href:"/products1", title:"products1"},*/ ];   
   
   return (
-  <nav className=" flex justify-between p-6 w-full text-xl text-gray-900 bg-slate-400  ">
-      <div className="hover:bg-stone-100 p-2 scale-200"><Logo/></div> 
+  <nav className=" flex justify-between p-4 w-full text-xl text-gray-900 bg-slate-400 items-center ">
+      <div className="hover:scale-105  delay-250 transition ease-in-out pl-4 scale-200"><Logo/></div> 
     
-          <div className="relative right-16 invisible xl:visible  ">                        
+          <div className="relative right-4 invisible xl:visible bottom-6 ">                        
                 <Products1/>
            </div> 
-            <div className="m-1  hidden xl:inline relative left-12 "><Search_bar/></div>
+            <div className="m-1  hidden xl:inline relative left-32 "><Search_bar/></div>
             
-              <div className="xl:flex flex-row uppercase justify-between   hidden items-end">
+              <div className="xl:flex flex justify-between uppercase  hidden relative left-24">
                 <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
                     {"bg-blue-900 text-white":usePathname()==="/"})} >Home</div></Link>
                 <Link href="/about" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",

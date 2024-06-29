@@ -1,6 +1,6 @@
 import Image from "next/image";
 import slika1 from "/public/dnne.jpg";
-import slika4 from "/public/d5.jpg";
+
 import slika5 from "/public/760x510_copy_2_blog_6500213eb865c.jpg";
 import slika6 from "/public/dddddd3.jpg";
 import slika7 from "/public/bed6.jpg";
@@ -52,34 +52,34 @@ export default function Home() {
           </div>
          <div className="flex justify-center">
         <Link  className="  mt-6 mb-6 " href="/about" >
-          <button className="px-5 py-2  grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+          <button className="px-5 py-2  grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105">
             Discover more</button></Link></div> 
       </div>       
       </div>
 
 
-     <div className={cn("p-12  bg-blue-950/60 mt-20 mb-24 mx-4" )} >      
+     <div className={cn("pt-12 pb-10 px-12 bg-blue-950/60 mt-20 mb-24 mx-4" )} >      
       <div className="grid 	gap-10 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
 
         <div className=" flex flex-col justify-center content-center ">
-          <Link  href="/proizvodi">  
+           
               <Image src={slika5} alt="Kitchen" className="  " />
-           </Link> 
+          
                  <div className="flex justify-center">
-          <Link  className="" href="/kitchen" >
-              <button className={cn("px-12 py-2 mt-6 bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110")}>
-              Kitchen
-              </button>
+                  <Link  className="" href="/kitchen" > 
+                        <button className={cn("px-12 py-2 mt-8 bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105")}>
+                            Kitchen
+                          </button>
           </Link>  </div>
         </div>
 
      <div>
-       <Link  href="">  
+       {/* <Link  href="">  */} 
             <Image src={slika7} alt="Bed Room" className="  " /> 
-       </Link>        
+       {/* </Link> */}        
           <div className="flex  justify-center">       
        <Link  className="" href="/spavaca_soba" >
-          <button className="px-12 py-2 mt-6   bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+          <button className="px-12 py-2 mt-8   bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105">
           Bedroom
           </button>
        </Link></div> 
@@ -93,11 +93,11 @@ export default function Home() {
       </Link> 
       <div className="flex justify-center  ">
         
-     <Link  className="" href="/" >
-          <button className="px-12 py-2 mt-6  bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+    {/*  <Link  className="" href="/" > */}
+          <button className="px-12 py-2 mt-8  bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105">
            Living room
           </button>
-      </Link>      
+     {/*  </Link> */}      
     </div></div> 
       </div>  
      </div> 
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
             <div className="flex justify-center">
             <Link  className="px-5 mt-5 mb-4 xl:mt-8" href="/about" >
-              <button className="px-5 py-2 mt-1 grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-110">
+              <button className="px-5 py-2 mt-1 grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105">
                 See what&apos;s new</button></Link>
             </div>    
           </div>

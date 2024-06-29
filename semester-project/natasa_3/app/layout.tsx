@@ -15,6 +15,8 @@ import {
   Playfair_Display,
 } from "next/font/google";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+
  
   
 
@@ -74,16 +76,17 @@ export default function RootLayout(
         <Navbar/>
         {children}
 
-    <footer className=" bg-slate-800 text-white p-2" >
+    <footer className=" bg-slate-800 text-white p-2 z-0 " >
       <div className=" grid grid-cols-2 md:grid-cols-5 ">
 
      <div className="md:ml-0">   <FooterItem title={"ABOUT US"} content={["About us", "Join our team"]}/> </div>
      <div className="md:mr-0 relative right-12">      <FooterItem title={"CUSTOMER SERVICE"} content={["Customer information", "Delivery","Returns"]}/></div>
         <FooterItem title={"CONTACT"} content={["Contact us", "Find store","Book appointment","As a professional"]}/>
        
-          <div className=" w-3/12 items-end m-4 grid col-start-2 col-end-3 md:col-start-5 md:col-end-6">
-            <SocialnIcons/>
+          <div className=" w-3/12 items-end m-4 grid col-start-2 col-end-3 md:col-start-5 md:col-end-6 z-50">
+            <SocialnIcons />
           </div>
+         
       </div>
       <div className="flex justify-center">
              copyright © 2023 nateo
