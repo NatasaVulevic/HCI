@@ -29,8 +29,8 @@ const NavBar=()=>{
   
   return (
   <nav className=" flex justify-between p-4 w-full text-xl text-gray-900 bg-slate-400 items-center ">
-      <div className="hover:scale-105  delay-250 transition ease-in-out pl-4 scale-200"><Logo/></div> 
-    
+      <div className=" pl-4 scale-200"><Logo/></div> 
+    {/*  hover:scale-105  delay-250 transition ease-in-out*/}
           <div className="relative right-4 invisible xl:visible bottom-6 ">                        
                 <Products1/>
            </div> 
