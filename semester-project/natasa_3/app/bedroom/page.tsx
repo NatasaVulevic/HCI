@@ -28,7 +28,7 @@ const  Spavaca_soba = async ()=>{
    return(  
 
    <div className="px-6 py-6 grid grid-cols-3 grid-rows-2">
-                <div className={cn("text-center xl:text-5xl text-4xl font-extrabold font-serif text-blue-950 mt-12",playfairDisplay.className)}>All</div>
+ {/* <div className={cn("text-center xl:text-5xl text-4xl font-extrabold font-serif text-blue-950 mt-12",playfairDisplay.className)}>Bedroom</div> */}
 
     {Bedroom_proizvodi.map((proizvod)=>{return(
        <div key={proizvod.id}> 
