@@ -39,7 +39,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
              <div className=" self-center  relative right-16"> <Products1/>  </div>  
              <div className="h-6"></div>
          
-        <XMarkIcon className={cn(" w-8 h-8 text-black m-6 absolute top-0 right-0 z-20 hover:bg-stone-100", { hidden: !open })} 
+        <XMarkIcon className={cn(" w-8 h-8 text-black m-6 absolute top-0 right-0 z-20 hover:cursor-pointer hover:scale-110 transition-ease-out", { hidden: !open })} 
             onClick= {() => setOpen(!open)}/> 
             
     </nav>  

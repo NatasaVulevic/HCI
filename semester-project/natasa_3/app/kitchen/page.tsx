@@ -6,6 +6,7 @@ import { FC } from "react";
 import Proizvodi from "@/lib/contentfulClient";
 import { playfairDisplay } from "../layout";
 import { cn } from "@/lib/utils";
+
 interface Type{
   id:string;
   category:string;
@@ -15,29 +16,10 @@ interface Type{
   currency:string;
   url:string;};
 
- /* import slika21 from "/public/slika_kuh1.jpg"; 
- import slika22 from "/public/slika_kuh2.jpg"; 
- import slika23 from "/public/slika_kuh3.jpg"; 
- import slika24 from "/public/slika_kuh4.jpg"; 
- import slika25 from "/public/slikakuh5.jpg"; 
- import slika26 from "/public/slikakuh6.jpg"; 
-export default Kuhinja; */
-//const proizvodi  =  GetAll();
-
- const  Kuhinja=async ()=>{
- // const proizvodi  = await GetAll();
-  const proizvodi= await Proizvodi();  
-  //console.log(proizvodi);
-
-
-  const a =5; /* console.log(proizvodi.name); */
-  //const Kuhinja_proizvodi=proizvodi.filter((proizvod)=>proizvod.subcategory=="Kitchen");
-   
-  //const Kuhinja_proizvodi= proizvodi.Kuhinja_proizvodi;
-  const Kuhinja_proizvodi= proizvodi.Kuhinja_proizvodi;
-
-  
- //console.log(Kuhinja_proizvodi); 
+ 
+ const  Kuhinja=async ()=>{ 
+  const proizvodi= await Proizvodi();    
+  const Kuhinja_proizvodi= proizvodi.Kuhinja_proizvodi;  
 
  return(
   <div >

@@ -1,23 +1,33 @@
-import slika21 from "public/dneeee.jpg"; 
- import slika22 from "/public/dne.jpg"; 
- import slika23 from "/public/ddd1.jpg"; 
- import slika24 from "/public/dnreee.jpg"; 
- import slika25 from "/public/dnne.jpg"; 
- import slika26 from "/public/d3.jpg"; 
-
 import Proizvod from "@/components/Proizvod";
-function Dnevni_boravak() {
-    return (
-    <div className="px-6 py-6 grid grid-cols-3 grid-rows-2">      
+import Proizvodi from "@/lib/contentfulClient";
+import { playfairDisplay } from "../layout";
+import { cn } from "@/lib/utils";
 
-      {/*   <Proizvod slika={slika21}  nazivProizvoda="Kuhinja Zara" cijena="10000 $"/> 
-        <Proizvod slika={slika22}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
-        <Proizvod slika={slika23}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
-        <Proizvod slika={slika24}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
-        <Proizvod slika={slika25}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> 
-        <Proizvod slika={slika26}  nazivProizvoda="Kuhinja Amari" cijena="10000 $"/> */} 
-         </div>
-  );
-} 
+interface Type{
+  id:string;
+  category:string;
+  subcategory:string;
+  name:string;
+  price:string;
+  currency:string;
+  url:string;};
+
+  const  Dnevni_boravak=async ()=>{
+    const proizvodi= await Proizvodi();  
+    const Living_proizvodi1=proizvodi.Living_proizvodi;
+   return(
+    <div >
+    <div className={cn("text-center xl:text-5xl text-4xl font-extrabold font-serif text-blue-950 mt-12",playfairDisplay.className)}>Living room</div>
+    <div className="px-6 py-6 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
+    
+     {Living_proizvodi1.map((proizvod)=>{return(
+       <div key={proizvod.id}> 
+        <Proizvod url={proizvod.url}  nazivProizvoda={proizvod.name} cijena={proizvod.price}/>
+        </div>
+        );})}    
+    
+    </div></div>
+    );
+  }; 
 
 export default Dnevni_boravak;

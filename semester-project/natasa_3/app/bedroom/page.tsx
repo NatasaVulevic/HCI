@@ -14,22 +14,15 @@ interface Type{
 
 //import GetAll from "@/lib/contentfulClient";
 const  Spavaca_soba = async ()=>{
-
-
-    /* const Proizvodi=await GetAll(); 
-    const Bedroom :Type[]= Proizvodi.filter((proizvod)=>{return(proizvod.subcategory=="Bedroom")}); */
-    const proizvodi= await Proizvodi();      
-   
+    const proizvodi= await Proizvodi();       
     const Bedroom_proizvodi= proizvodi.Bedroom;
-     
-  
-   //console.log(proizvodi.Bedroom);
-
+    
    return(  
-
-   <div className="px-6 py-6 grid grid-cols-3 grid-rows-2">
- {/* <div className={cn("text-center xl:text-5xl text-4xl font-extrabold font-serif text-blue-950 mt-12",playfairDisplay.className)}>Bedroom</div> */}
-
+<div>
+  
+ <div className={cn("text-center xl:text-5xl text-4xl font-extrabold font-serif text-blue-950 mt-12",playfairDisplay.className)}>Bedroom</div>
+   <div className="px-6 py-6 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1">
+  
     {Bedroom_proizvodi.map((proizvod)=>{return(
        <div key={proizvod.id}> 
         <Proizvod url={proizvod.url}  nazivProizvoda={proizvod.name} cijena={proizvod.price}/>
@@ -37,7 +30,7 @@ const  Spavaca_soba = async ()=>{
         );})}   
         
     
-    </div>
+    </div></div>
     );
   };
   export default Spavaca_soba; 

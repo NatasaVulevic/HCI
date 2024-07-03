@@ -15,7 +15,8 @@ function Likes() {
             Browse our collection and save products you like. </p>
            
             <Link  className="px-5 py-2 " href="/" >
-          <button className="px-5 py-2 m-2 grid place-self-center bg-blue-900 text-white text-xl rounded-sm" >Find inspiration</button></Link>
+          <button className="px-5 py-2 m-2 grid place-self-center bg-blue-900 text-white md:text-xl rounded-sm" >Find inspiration</button></Link>
+
         </main>
     );
 }

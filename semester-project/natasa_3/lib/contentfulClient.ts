@@ -33,11 +33,7 @@ const getAllProducts=`query Item{
         
         image{url}
     }}
-}`;
-  //const CONTENTFUL_SPACE_ID="g1r7hbuovrtj";
-//const CONTENTFUL_ACCESS_TOKEN="rf1MhBuoDIpZjyJUlZ6mL7YpNz_PxC6SNu489_b8HFw";  
-//const CONTENTFUL_ACCESS_TOKEN="AaDtne2bnrpGWYEa9OIFmyotLeKQMvPNFXFYMZbexsI";  
-
+}`;  
 
 const baseUrl = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}/environments/master`;
 const GetAll = async ():Promise<Type[]> => {
@@ -50,7 +46,7 @@ const GetAll = async ():Promise<Type[]> => {
         },
         body: JSON.stringify({ query: getAllProducts }),
       });
-  //ona stala
+ 
       // Get the response as JSON, cast as ProductCollectionResponse
        const body = (await response.json()) as {
         data: ProductCollResponse;
@@ -66,9 +62,8 @@ const GetAll = async ():Promise<Type[]> => {
          price:item.price,
          currency:item.currency,
          url: item.image.url,
-         
-        })) ;  
 
+        })) ;  
   
       return produkti;
     } catch (error) {
@@ -77,20 +72,14 @@ const GetAll = async ():Promise<Type[]> => {
       return [];
     } 
   };
-    //export default GetAll;
       const Proizvodi= async()=>{
-      const Proizvodi=await GetAll(); 
-     // console.log(Proizvodi);
+      const Proizvodi=await GetAll();      
       const Bedroom = Proizvodi.filter((proizvod)=>proizvod.subcategory=="Bedroom");
       const Kuhinja_proizvodi=Proizvodi.filter((proizvod)=>proizvod.subcategory=="Kitchen");
       const Living_proizvodi=Proizvodi.filter((proizvod)=>proizvod.subcategory=="Living_room");
-
      
       const produkt={Kuhinja_proizvodi,Bedroom,Living_proizvodi,Proizvodi};
-      
-
-
-      return produkt;     
-      
+    
+      return produkt;           
     };
     export default Proizvodi;  
