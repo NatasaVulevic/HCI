@@ -12,7 +12,7 @@ interface Type{
   currency:string;
   url:string;};
 
-  const  Dnevni_boravak=async ()=>{
+  const  Dnevni_boravak= async ()=>{
     const proizvodi= await Proizvodi();  
     const Living_proizvodi1=proizvodi.Living_proizvodi;
    return(
@@ -29,5 +29,5 @@ interface Type{
     </div></div>
     );
   }; 
-
+  
 export default Dnevni_boravak;

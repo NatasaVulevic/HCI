@@ -27,8 +27,8 @@ const Proizvod= ({url,nazivProizvoda, cijena }:{url:string,nazivProizvoda:string
                                   </svg> <svg className={cn("fill-blue-950", {hidden:!open2})} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" ><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></div> </div>
    
 
-     <div className={cn("flex justify-center text-xl font-extrabold font-serif  text-blue-950",playfairDisplay.className)}>{nazivProizvoda}</div>
-     <div className={cn("flex justify-center  font-bold font-serif  text-blue-950",playfairDisplay.className)}>{cijena} €</div>
+     <div className={cn("flex justify-center text-xl font-extrabold font-serif  text-blue-950")}>{nazivProizvoda}</div>
+     <div className={cn("flex justify-center  font-bold font-serif  text-blue-950")}>{cijena} €</div>
      
      <div className="self-end flex justify-end my-4 mx-0">
      <div className=" px-5 py-2  bg-blue-900 text-white hover:scale-105 transition ease-in-out delay-250 rounded-sm

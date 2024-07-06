@@ -1,15 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCartShopping,faMagnifyingGlass,faSearch  } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-const Search_bar=()=>{
+import { cn } from "@/lib/utils";
+
+const Search_bar=({open1}:{open1:boolean})=>{
     return(
     <div className="flex rounded-sm">
-        <input
+        <input onClick={()=>{hidden:false}}
         type="text"
-        className="p-2"
+        className={cn("p-2")}
         placeholder="Search..."
+        
     />
-    <button type="submit" className="bg-blue-900 px-4 py-2 rounded-sm"> <Link href="/not_found">  <FontAwesomeIcon style={{color: "white" }} icon={faMagnifyingGlass}/> </Link> </button>
+    <button type="submit" className="bg-blue-900 px-4 py-2 rounded-sm">
+         <Link href="/not_found">  <FontAwesomeIcon style={{color: "white" }} icon={faMagnifyingGlass}/> </Link> </button>
 </div>
     )
 }

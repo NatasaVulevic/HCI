@@ -10,24 +10,21 @@ import {
     Roboto_Condensed,
     Playfair_Display,
   } from "next/font/google";
-  import slika1 from "/public/modern_220318-special-orders2357.jpg"
+  //import slika1 from "/public/modern_220318-special-orders2357.jpg"
+  import slika1 from "/public/dnevna12.jpg"  
 import Image from "next/image";
-
-
-
  
  function About() {
     return(
-        <div className=" flex lg:flex-row flex-col m-10">
+        <div className=" flex lg:flex-row flex-col m-8 sm:my-10 sm:mx-8 lg:justify-around">
            
                 <div className=" bg-blue-950/60 p-10 h-2/3 self-center lg:self-start mt-8 lg:mt-0 lg:mr-4">
-                   <Image src={slika1} alt="aa"/>
-                    
+                   <Image src={slika1} alt="aa"/>                    
                 </div>
             
             <div className="lg:w-1/2 w-full order-first lg:order-last bg-white lg:ml-4 p-4">
 
-                <div className={cn(" text-center text-5xl font-serif font-extrabold text-blue-950 m-12 ", 
+                <div className={cn(" text-center text-4xl sm:text-5xl font-serif font-extrabold text-blue-950 sm:m-12 m-10 ", 
                           playfairDisplay.className)}>
                     About us
                 </div>

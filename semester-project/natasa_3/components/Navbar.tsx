@@ -1,8 +1,5 @@
  "use client"
  import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHeart } from "@fortawesome/free-regular-svg-icons";
-import {faCartShopping,faMagnifyingGlass,faSearch  } from "@fortawesome/free-solid-svg-icons";
 import Logo from './Logo';
 import { useState } from "react";
 import Hamburger from "@/components/Hamburger";
@@ -23,18 +20,17 @@ const NavBar=()=>{
   
   const pages : Page[]= [    
     {href: "/",  title:"home" } ,  
-    /* {href:"/products", title:"products"}, */
-    {href: "/sign_in", title:"sign in "},
-   /*  {href:"/products1", title:"products1"},*/ ];   
+    {href: "/sign_in", title:"sign in "}
+    ];   
   
   return (
   <nav className=" flex justify-between p-4 w-full text-xl text-gray-900 bg-slate-400 items-center ">
       <div className=" pl-4 scale-200"><Logo/></div> 
-    {/*  hover:scale-105  delay-250 transition ease-in-out*/}
-          <div className="relative right-4 invisible xl:visible bottom-6 ">                        
+  
+          <div className="relative right-4 invisible xl:visible bottom-7 ">                        
                 <Products1/>
            </div> 
-            <div className="m-1  hidden xl:inline relative left-32 "><Search_bar/></div>
+            <div className="m-1  hidden xl:inline relative left-32 "><Search_bar open1={false}/></div>
             
               <div className="xl:flex flex justify-between uppercase  hidden relative left-24">
                 <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm",
@@ -48,7 +44,7 @@ const NavBar=()=>{
                     {"bg-blue-900 text-white":usePathname()==="/cart"})}  >Cart</div></Link>
               </div>
           <div className="apsolute right-0"> <Hamburger  open={open1} setOpen={setOpen1}/> </div> 
-            <MobileNavbar  open={open1} setOpen={setOpen1} /> 
+    <MobileNavbar  open={open1} setOpen={setOpen1} /> 
           
     
   </nav>
