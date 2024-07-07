@@ -3,8 +3,6 @@ import slika5 from "/public/760x510_copy_2_blog_6500213eb865c.jpg";
 import slika6 from "/public/dddddd3.jpg";
 import slika7 from "/public/bed6.jpg";
 import slika8 from "/public/d5.jpg";
-//import slika9 from "/public/b1.jpg";
-//import slika9 from "/public/bed2.jpg";
 import slika9 from "/public/bedroom11.jpg";
 import Button from "@/components/Button";
 import {Inter,Roboto, Roboto_Condensed,
@@ -76,7 +74,7 @@ export default function Home() {
     
 
 {/* Third section */}
-   <div className={cn("h-1/2 pt-12 md:pt-20 pb-10 px-8 md:px-12 bg-blue-950/60 mb-6 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-10 */} 
+   <div className={cn("h-1/2 pt-12 md:pt-20 pb-10 px-8 md:px-12 bg-blue-950/60 mb-12 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-10 */} 
 
     <div className="grid 	gap-12 gap-6 md:gap-12 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
 
@@ -86,7 +84,6 @@ export default function Home() {
                   <Button text={"Kitchen"} url={"/kitchen"}/>
               </div>
       </div>
-
 
     <div>   
           <Image src={slika7} alt="Bed Room" className="  " />           

@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 
 const Hamburger=({ open, setOpen }: {open:boolean,setOpen: Dispatch<SetStateAction<boolean>> }) =>{
     return(
-    <div  className="xl:hidden hover:cursor-pointer hover:scale-110 transition-ease-out m-2 text-black w-8 h-8"
+    <div  className="xl:hidden hover:cursor-pointer hover:text-white hover:bg-blue-900 transition-ease-out m-2 text-black w-8 h-8"
         onClick={() => setOpen(!open)}>                       
          <Bars3Icon className={cn({ hidden: open })}/>     
          <XMarkIcon className={cn("text-black", { hidden: !open })}/>  
