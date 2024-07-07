@@ -16,7 +16,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
         <nav className={cn("flex flex-col bg-slate-400 xl:hidden items-center justify-start h-screen  p-10 w-screen absolute text-xl top-0 right-0 z-20",
                             { hidden: !open })}  onClick={()=>setOpen(false)}>     
   
-          <div className={cn("mb-6 mt-5 ")} onClick={()=>setOpen(true)} ><Search_bar open1={true}/></div>
+          <div className={cn("mb-6 mt-5 ")} onClick={()=>setOpen(true)} ><Search_bar /></div>
 
             <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm uppercase",
                 {"bg-blue-900 text-white":usePathname()==="/"})} >Home</div></Link>             

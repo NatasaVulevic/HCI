@@ -15,6 +15,7 @@ import {
 } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Image from "next/image";  
+import Footer from "@/components/Footer";
 
 // Get this info from some external source (e.g. CMS)
 const pages = { 
@@ -62,8 +63,8 @@ export default function RootLayout(
       <body className={cn( "bg-sky-950/10 relative",inter.className)}   > 
         <Navbar/>
         {children}
-
-    <footer className=" bg-slate-800 text-white p-2 " >
+        <Footer/>
+   {/*  <footer className=" bg-slate-800 text-white p-2 " >
       <div className=" grid grid-cols-2 md:grid-cols-5 p-2 ">
 
      <div className="md:ml-0">
@@ -82,7 +83,7 @@ export default function RootLayout(
              copyright © 2023 nateo
       </div>
 
-    </footer>
+    </footer> */}
 
   </body>
     </html>

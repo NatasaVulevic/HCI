@@ -5,12 +5,12 @@ import { cn } from "@/lib/utils";
 import { Dispatch, SetStateAction } from "react";
 
 
-const Search_bar=({open1}:{open1:boolean})=>{
+const Search_bar=()=>{
     return(
     <div className="flex rounded-sm">
-        <input onClick={()=>{hidden:false}}
+        <input 
         type="text"
-        className={cn("p-2 visible")}
+        className={cn("p-2")}
         placeholder="Search..."
         
     />
