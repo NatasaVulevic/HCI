@@ -41,7 +41,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
                             {"bg-blue-900 text-white z-40":open2===true},
                 pages.map( (a)=>{ return(   {"bg-blue-900 text-white":pathname===a} ) })     
            )}           
-            > Products
+            > Products&nbsp;&nbsp;&gt;
        </button>  
     <Link href="/all">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4 " , {hidden: !open2} , {"bg-blue-900 text-white":usePathname()==="/all"}
        )}  onMouseEnter={() => setOpen2(true)}

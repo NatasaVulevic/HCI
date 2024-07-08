@@ -20,7 +20,7 @@ import { Dispatch, SetStateAction } from "react";
             onMouseLeave={() =>setOpen2(false)} className={cn(" uppercase text-xl px-5 py-2 text-blue-950 border-2 border-blue-900 round-sm rounded-sm mt-1 relative right-4 ",{"bg-blue-900 text-white":open2===true },
                  pages.map( (a)=>{ return(   {"bg-blue-900 text-white":pathname===a} ) })     
             )}           
-             > Products
+             > Products&nbsp;&nbsp;&gt;
         </button>  
 
      <Link href="/all">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4 " ,
