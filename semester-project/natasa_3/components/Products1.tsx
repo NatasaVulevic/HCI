@@ -1,50 +1,53 @@
-
 import { cn } from "@/lib/utils";
-
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"; 
   const pages=["/all","/kitchen","/bedroom","/living_room"];
+import { Dispatch, SetStateAction } from "react";
+
 //Products bg-blue-950
 
 //  {"bg-blue-900":usePathname()==="/kitchen"})}       pages.map( (a)=>{ return(   {"bg-blue-900":pathname===a} ) })
- const Products1=()=>{
-    const pathname=usePathname();
-  
-    const[ open, setOpen]=useState(false);    
- 
+ const Products1=(/* { open3,setOpen3 }:{ open3:boolean,setOpen3:Dispatch<SetStateAction<boolean>>,
+ } */)=>{
+    const pathname=usePathname();  
+    const[ open2, setOpen2]=useState(false);     
   
     return(
-    <div className="absolute z-30 text-center xl:text-start ">
-       
+    <div className="absolute z-30 text-center xl:text-start ">       
         <button
-           onClick={ ()=>setOpen(!open) } onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() =>setOpen(false)} className={cn(" uppercase text-xl px-5 py-2 text-blue-950 border-2 border-blue-900 round-sm rounded-sm mt-1 relative right-4 ",{"bg-blue-900 text-white":open===true },
+           onClick={ ()=>setOpen2(!open2) } onMouseEnter={() => setOpen2(true)}
+            onMouseLeave={() =>setOpen2(false)} className={cn(" uppercase text-xl px-5 py-2 text-blue-950 border-2 border-blue-900 round-sm rounded-sm mt-1 relative right-4 ",{"bg-blue-900 text-white":open2===true },
                  pages.map( (a)=>{ return(   {"bg-blue-900 text-white":pathname===a} ) })     
             )}           
              > Products
         </button>  
 
-     <Link href="/all">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4 " , {hidden: !open}, {"bg-blue-900 text-white":usePathname()==="/all"}
-        )}  onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() =>setOpen(false)} >
+     <Link href="/all">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4 " ,
+                      {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/all"}
+        )}  onMouseEnter={() => setOpen2(true)}
+        onMouseLeave={() =>setOpen2(false)} /* onClick={()=>setOpen3(false) }*/>
                All
         </div></Link>  
-        <Link href="/kitchen">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4", {hidden: !open},
-            {"bg-blue-900 text-white":usePathname()==="/kitchen"}
-        )} onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() =>setOpen(false)} >
+        <Link href="/kitchen">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4", 
+                                   {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/kitchen"}
+        )} onMouseEnter={() => setOpen2(true)}
+        onMouseLeave={() =>setOpen2(false)}
+        >
                Kitchen
         </div></Link> 
-        <Link href="/bedroom">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white  hover:bg-blue-900 relative right-4", {hidden: !open}, {"bg-blue-900 text-white":usePathname()==="/bedroom"}
-        )} onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() =>setOpen(false)} >
+        <Link href="/bedroom">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white  hover:bg-blue-900 relative right-4", 
+                                   {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/bedroom"}
+        )} onMouseEnter={() => setOpen2(true)}
+        onMouseLeave={() =>setOpen2(false)}
+        >
                Bedroom
         </div></Link>
         <Link href="/living_room"><div className={cn(" text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4",
-         {hidden: !open}, {"bg-blue-900 text-white":usePathname()==="/living_room"}
-        )} onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() =>setOpen(false)} >
+                                          {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/living_room"}
+        )} onMouseEnter={() => setOpen2(true)}
+        onMouseLeave={() =>setOpen2(false)}
+         >
                Living room
         </div></Link> 
 

@@ -29,7 +29,7 @@ import Image from "next/image";
                     About us
                 </div>
 
-                <div className=" inline-block align-middle pb-8 px-4">
+                <div className="   pb-8 px-4">
                 Our journey began with a simple belief that furniture is not just about function; it&apos;s a reflection of your 
                 lifestyle, a canvas for self-expression, and a key to creating spaces you&apos;ll love.<p><br/>Founded by two enthusiasts,
                  Nateo was born out of a shared vision to redefine the furniture shopping experience. Our mission is to 
