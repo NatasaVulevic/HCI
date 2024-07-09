@@ -55,7 +55,7 @@ export default function Home() {
  {/* second section */}
 <div className="flex lg:flex-row flex-col mx-6 justify-center lg:justify-around items-center sm:my-10 md:my-12 lg:my-36 my-4">{/* lg:mx-16 mt-24 mb-24*/}
   
-   <div className="w-full md:w-1/2 ">
+   <div className="w-full md:w-1/2 lg:mr-6"> {/* lg:mr-6 */}
       <div className=" w-full rounded-sm items-center pt-6 p-2">{/*lg:w-1/2  h-84   bg-white/60   */}
    
           <div className=" flex justify-center text-center xl:text-lg md:text-lg px-8">
