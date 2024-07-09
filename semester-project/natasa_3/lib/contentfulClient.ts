@@ -29,8 +29,7 @@ const getAllProducts=`query Item{
         subcategory
         name
         price
-        currency
-        
+        currency        
         image{url}
     }}
 }`;  
@@ -62,13 +61,12 @@ const GetAll = async ():Promise<Type[]> => {
          price:item.price,
          currency:item.currency,
          url: item.image.url,
-
-        })) ;  
-  
+        })) ;    
       return produkti;
-    } catch (error) {
-      console.log(error);
-  
+      }
+      
+      catch (error) {
+      console.log(error);  
       return [];
     } 
   };
@@ -78,8 +76,8 @@ const GetAll = async ():Promise<Type[]> => {
       const Kuhinja_proizvodi=Proizvodi.filter((proizvod)=>proizvod.subcategory=="Kitchen");
       const Living_proizvodi=Proizvodi.filter((proizvod)=>proizvod.subcategory=="Living_room");
      
-      const produkt={Kuhinja_proizvodi,Bedroom,Living_proizvodi,Proizvodi};
-    
+      const produkt={Kuhinja_proizvodi,Bedroom,Living_proizvodi,Proizvodi};    
       return produkt;           
     };
     export default Proizvodi;  
+    

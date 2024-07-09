@@ -1,8 +1,8 @@
 const FooterItem=({title,content}:{title:string,content:string[]})=>{
        return(
-        <div className="mr-10 mb-3 mt-2 ms-6  md:m-10 text-white">    
+        <div className="mr-10 mb-3 mt-2 ms-6  md:m-10 text-white text-sm sm:text-base">    
     
-            <div className="text-m font-medium mb-2">
+            <div className=" mb-2">
                 {title}
             </div>      
             <ul >

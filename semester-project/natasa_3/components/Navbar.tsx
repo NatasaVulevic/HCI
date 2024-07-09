@@ -28,7 +28,7 @@ const NavBar=()=>{
       <div className=" pl-4 scale-200"><Logo/></div> 
   
           <div className="relative right-4 invisible xl:visible bottom-7 ">                        
-                <Products1 /* open3={open1} setOpen3={setOpen1} *//>
+                <Products1  open3={open1} setOpen3={setOpen1} />
            </div> 
             <div className="m-1  hidden xl:inline relative left-32 "><Search_bar /></div>
             

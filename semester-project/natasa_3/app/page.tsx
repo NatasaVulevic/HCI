@@ -9,7 +9,6 @@ import {Inter,Roboto, Roboto_Condensed,
         Playfair_Display,} from "next/font/google";
 import { cn } from "@/lib/utils";
 
-//flex flex-col justify-center font-playfair w-1/2 w-1/2 scale-x-125  mt-28 mb-16 
 const roboto_condensed = Roboto_Condensed({
   weight: ["300", "700"],
   subsets: ["latin"],
@@ -30,46 +29,49 @@ export default function Home() {
   return (
     <main className="text-gray-900  " >
 
-{/*mb-24  */}
-       <div className="flex justify-center items-center h-screen bg-no-repeat bg-cover bg-center apsolute" style={{backgroundImage: `url(${slika8.src})`, }}>  
+{/*mb-24 h-76 */}  {/* First section */}
+       <div className="flex justify-center items-center h-screen bg-no-repeat bg-cover bg-center apsolute" 
+                          style={{backgroundImage: `url(${slika8.src})`, }}>  
                            
-        <div className=" bg-white/70 h-76 w-4/6 rounded-sm lg:relative md:top-20">
-              <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 sm:m-6 m-4 ", 
+         <div className=" bg-white/70 md:h-76 w-5/6  rounded-sm  relative  md:top-20">
+
+            <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 md:mx-6 mx-4 my-4 ", 
                                 playfairDisplay.className)}>
                   Discover your perfect space
-                </div>
-          <div className=" flex justify-center items-center lg:text-xl  md:text-lg sm:px-10 px-5">Welcome to Nateo, where style meets comfort, and every piece of furniture
-            tells a story. Step into a world of curated designs and timeless elegance, carefully selected to transform your living spaces into expressions of
-            your unique personality.
-            At Nateo, we understand that furniture is more than just a functional necessity it&apos;s an integral part of your lifestyle.
-          </div>
+            </div>
+            <div className=" flex justify-center items-center lg:text-xl  md:text-lg sm:px-10 px-5">Welcome to Nateo, where style meets comfort, and every piece of furniture
+              tells a story. Step into a world of curated designs and timeless elegance, carefully selected to transform your living spaces into expressions of
+              your unique personality.
+              At Nateo, we understand that furniture is more than just a functional necessity it&apos;s an integral part of your lifestyle.
+            </div>
 
-         <div className="flex justify-center my-6">       
-            <Button text={"Discover more"} url={"/about"}/>      
-          </div> 
-      </div>          
-      </div>       
+            <div className="flex justify-center mt-6 mb-8">       
+                <Button text={"Discover more"} url={"/about"}/>      
+            </div> 
+       </div>          
+     </div>       
  
 
  {/* second section */}
-<div className="flex lg:flex-row flex-col mx-6 justify-around items-center md:my-36 my-4">{/* lg:mx-16 mt-24 mb-24*/}
+<div className="flex lg:flex-row flex-col mx-6 justify-center lg:justify-around items-center sm:my-10 md:my-12 lg:my-36 my-4">{/* lg:mx-16 mt-24 mb-24*/}
+  
    <div className="w-full md:w-1/2 mr-6">
-  <div className=" w-full rounded-smitems-center pt-6 p-2">{/*lg:w-1/2  h-84   bg-white/60   */}
-    {/*  <div className={cn(" text-center md:text-4xl text-4xl font-serif font-extrabold text-blue-950 m-8 md:m-10 lg:mx-4 lg:mb-6 lg:mt-4 ", 
-                    playfairDisplay.className)}>
-      New Arrivals
-    </div>  */}
-    <div className=" flex justify-center text-center xl:text-lg md:text-lg px-8">
-      Don&apos;t miss the chance to be ahead of the curve.Explore our range of products and make a statement with pieces that reflect your distinctive
-      taste. Because when it comes to style, being on-trend has never been so effortless. Welcome the new, and welcome a fresh perspective
-      to your home.
-    </div>
-      <div className="flex justify-center m-4">  
-     
-            <Button text={"Shop all"} url={"/about"}  /></div>         
-   </div> 
+      <div className=" w-full rounded-sm items-center pt-6 p-2">{/*lg:w-1/2  h-84   bg-white/60   */}
+   
+          <div className=" flex justify-center text-center xl:text-lg md:text-lg px-8">
+            Don&apos;t miss the chance to be ahead of the curve.Explore our range of products and make a statement with pieces that reflect your distinctive
+            taste. Because when it comes to style, being on-trend has never been so effortless. Welcome the new, and welcome a fresh perspective
+            to your home.
+          </div>
+
+          <div className="flex justify-center m-4 md:mt-6 md:mb-10 lg:mt-6 lg:mb-0">          
+                <Button text={"Shop all"} url={"/all"}  />
+          </div>         
+    </div> 
 </div>
-  <div className="lg:w-1/2 w-full mt-2 mb-6 lg:m-0  "> <Image className="object-fit md:h-96  " src={slika9} alt="New Arrival" /></div>{/*lg:h-96  h-80*/}
+
+<div className="lg:w-1/2 w-full mt-2 mb-6 lg:m-0  "> 
+    <Image className="object-fit md:h-96  " src={slika9} alt="New Arrival" /></div>{/*lg:h-96  h-80*/}
 </div> 
     
 
@@ -80,21 +82,21 @@ export default function Home() {
 
       <div className=" flex flex-col justify-center content-center ">        
             <Image src={slika5} alt="Kitchen" className="  " />        
-              <div className="flex justify-center mt-2">               
+              <div className="flex justify-center mt-4 md:mt-6">          {/* mt-2 */}     
                   <Button text={"Kitchen"} url={"/kitchen"}/>
               </div>
       </div>
 
     <div>   
           <Image src={slika7} alt="Bed Room" className="  " />           
-            <div className="flex  justify-center mt-2">   
+            <div className="flex  justify-center md:mt-6 mt-4">   
               <Button text={"Bedroom"} url={"/spavaca_soba"}/>     
      </div> 
   </div>  
        
   <div className="md:relative md:left-1/2 xl:static"  >     
         <Image src={slika6} alt="livingroom" className=" "  />    
-           <div className="flex justify-center mt-2 ">    
+           <div className="flex justify-center md:mt-6 mt-4">    
             <Button text={"Living room"} url={"/living_room"}/>
           </div>
   </div> 
@@ -111,28 +113,7 @@ export default function Home() {
                         </button>  </Link> */} 
 
                         {/* second section */}
-{/* <div className="flex lg:flex-row flex-col  mb-24  mx-6 justify-around items-center"> lg:mx-16 mt-24
-   <div className="w-1/2 mr-6">
-  <div className=" w-full rounded-sm  items-center p-2">{lg:w-1/2  h-84   bg-white/50 
-      <div className={cn(" text-center md:text-4xl text-4xl font-serif font-extrabold text-blue-950 m-8 md:m-10 lg:mx-4 lg:mb-6 lg:mt-4 ", 
-                    playfairDisplay.className)}>
-      New Arrivals
-    </div>  
-    <div className=" flex justify-center items-center xl:text-lg md:text-lg px-8">
-      Don&apos;t miss the chance to be ahead of the curve.Explore our New Arrivals and make a statement with pieces that reflect your distinctive
-      taste. Because when it comes to style, being on-trend has never been so effortless. Welcome the new, and welcome a fresh perspective
-      to your home.
-    </div>
-      <div className="flex justify-center m-4">
-    
-      
-            <Button text={"See what's new"} url={"/about"}  /></div>
-        
-   </div> 
-</div>
-  <div className="lg:w-1/2 w-full "> <Image className="object-fit md:h-96  " src={slika2} alt="New Arrival" /></div>lg:h-96  h-80
 
-</div>  */}
 
 
 {/* <div className="flex justify-center"> 

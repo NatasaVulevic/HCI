@@ -10,7 +10,7 @@ const Search_bar=()=>{
     <div className="flex rounded-sm">
         <input 
         type="text"
-        className={cn("p-2")}
+        className={cn("p-2 rounded-sm text-sm sm:text-lg")}
         placeholder="Search..."
         
     />

@@ -16,8 +16,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
    
     return(             
         <nav className={cn("flex flex-col bg-slate-400 xl:hidden items-center justify-start h-screen p-10 w-screen absolute text-xl top-0 right-0 z-20",
-                            { hidden: !open })}  >     
-  
+                            { hidden: !open })}  >    
           <div className={cn("mb-6 mt-5 ")}  ><Search_bar /></div>
 
             <Link href="/" ><div className={cn("px-5 py-2 m-1 hover:bg-blue-900 hover:text-white text-xl rounded-sm uppercase z-40",
@@ -31,8 +30,22 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
             <Link href="/cart"><div className={cn("px-5 py-2 m-1 mb-6 hover:bg-blue-900 hover:text-white text-xl rounded-sm uppercase",
                 {"bg-blue-900 text-white":usePathname()==="/cart"})} onClick={()=>setOpen(false)} >Cart</div></Link>
 
-            {/*  <div className=" self-center  relative right-16"> <Products1 open3={open} setOpen3={setOpen}/>  </div>   */}
-    <div className=" self-center  relative right-16">
+              <div className=" self-center  relative right-16"> <Products1 open3={open} setOpen3={setOpen}/>  </div>  
+   
+             <div className="h-6"></div>
+         
+        <XMarkIcon className={cn(" w-8 h-8 text-black m-6 absolute top-0 right-0 z-20 hover:cursor-pointer hover:text-white hover:bg-blue-900", { hidden: !open })} 
+            onClick= {() => setOpen(!open)}/> 
+            
+    </nav>     
+    );
+};
+export default MobileNavbar;
+
+             
+
+
+             {/* <div className=" self-center  relative right-16">
         <div className="absolute z-30 text-center xl:text-start ">       
        <button
           onClick={ ()=>setOpen2(!open2) }  onMouseEnter={() => setOpen2(!open2)}
@@ -69,18 +82,7 @@ const MobileNavbar=({ open,setOpen }:{ open:boolean,setOpen:Dispatch<SetStateAct
               Living room
        </div></Link> 
        </div>
-    </div>  {/* end of products */}
+    </div>  */} {/* end of products */}
 
-             <div className="h-6"></div>
-         
-        <XMarkIcon className={cn(" w-8 h-8 text-black m-6 absolute top-0 right-0 z-20 hover:cursor-pointer hover:text-white hover:bg-blue-900", { hidden: !open })} 
-            onClick= {() => setOpen(!open)}/> 
-            
-    </nav>     
-    );
-};
-export default MobileNavbar;
-             /*  onMouseLeave={() =>setOpen(false)} */
-            
 
   

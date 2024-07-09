@@ -5,11 +5,9 @@ import { usePathname } from "next/navigation";
   const pages=["/all","/kitchen","/bedroom","/living_room"];
 import { Dispatch, SetStateAction } from "react";
 
-//Products bg-blue-950
 
-//  {"bg-blue-900":usePathname()==="/kitchen"})}       pages.map( (a)=>{ return(   {"bg-blue-900":pathname===a} ) })
- const Products1=(/* { open3,setOpen3 }:{ open3:boolean,setOpen3:Dispatch<SetStateAction<boolean>>,
- } */)=>{
+ const Products1=( {open3,setOpen3 }:{ open3:boolean,setOpen3:Dispatch<SetStateAction<boolean>>,
+ } )=>{
     const pathname=usePathname();  
     const[ open2, setOpen2]=useState(false);     
   
@@ -26,13 +24,14 @@ import { Dispatch, SetStateAction } from "react";
      <Link href="/all">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4 " ,
                       {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/all"}
         )}  onMouseEnter={() => setOpen2(true)}
-        onMouseLeave={() =>setOpen2(false)} /* onClick={()=>setOpen3(false) }*/>
+        onMouseLeave={() =>setOpen2(false)}  onClick={()=>setOpen3(false) }>
                All
         </div></Link>  
         <Link href="/kitchen">  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 relative right-4", 
                                    {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/kitchen"}
         )} onMouseEnter={() => setOpen2(true)}
         onMouseLeave={() =>setOpen2(false)}
+        onClick={()=>setOpen3(false)}
         >
                Kitchen
         </div></Link> 
@@ -40,6 +39,7 @@ import { Dispatch, SetStateAction } from "react";
                                    {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/bedroom"}
         )} onMouseEnter={() => setOpen2(true)}
         onMouseLeave={() =>setOpen2(false)}
+        onClick={()=>setOpen3(false)}
         >
                Bedroom
         </div></Link>
@@ -47,21 +47,20 @@ import { Dispatch, SetStateAction } from "react";
                                           {hidden: !open2}, {"bg-blue-900 text-white":usePathname()==="/living_room"}
         )} onMouseEnter={() => setOpen2(true)}
         onMouseLeave={() =>setOpen2(false)}
+        onClick={()=>setOpen3(false)}
          >
                Living room
         </div></Link> 
-
-
-  {/* { pages.map((a)=>{ <Link key={a} href={a}>  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 apsolute " , {hidden: !open},
+        </div>
+    );
+};
+export default Products1; 
+//  transition: 1s ease-in-out;
+  
+{/* { pages.map((a)=>{ <Link key={a} href={a}>  <div className={cn("text-xl px-5 py-2 round-sm bg-slate-400 hover:text-white hover:bg-blue-900 apsolute " , {hidden: !open},
         )}  onMouseEnter={() => setOpen(true)}
         onMouseLeave={() =>setOpen(false)} >
               {a}
         </div></Link>   
             
         })} */}
-
-        </div>
-    );
-};
-export default Products1; 
-//  transition: 1s ease-in-out;
