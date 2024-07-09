@@ -5,7 +5,7 @@ const FooterItem=({title,content}:{title:string,content:string[]})=>{
             <div className=" mb-2">
                 {title}
             </div>      
-            <ul >
+            <ul className="leading-6 md:leading-7" >
                 {content.map( (content, index) => (
                 <li key={index}> {content} </li>) )
                    }
