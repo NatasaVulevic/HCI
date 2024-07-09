@@ -35,11 +35,11 @@ export default function Home() {
                            
          <div className=" bg-white/70 md:h-76 w-5/6  rounded-sm  relative  md:top-20">
 
-            <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 md:mx-6 mx-4 my-4 ", 
+            <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 md:mx-6 md:my-6 mx-4 my-4 ", 
                                 playfairDisplay.className)}>
                   Discover your perfect space
             </div>
-            <div className=" flex justify-center items-center lg:text-xl  md:text-lg sm:px-10 px-5">Welcome to Nateo, where style meets comfort, and every piece of furniture
+            <div className=" flex justify-center text-justify items-center lg:text-xl  md:text-lg sm:px-10 px-5">Welcome to Nateo, where style meets comfort, and every piece of furniture
               tells a story. Step into a world of curated designs and timeless elegance, carefully selected to transform your living spaces into expressions of
               your unique personality.
               At Nateo, we understand that furniture is more than just a functional necessity it&apos;s an integral part of your lifestyle.
