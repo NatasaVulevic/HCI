@@ -14,7 +14,7 @@ export const playfairDisplay = Playfair_Display({
 const Proizvod= ({url,nazivProizvoda, cijena }:{url:string,nazivProizvoda:string,cijena:string})=>{
   const[open2,setOpen2]=useState(false); 
   return(
-    <div className=" border-2 border-black m-6 p-4 flex-col bg-white rounded-sm">  {/*bg-slate-50  */}
+    <div className=" border-2 border-black m-6 p-4 flex-col bg-white rounded-sm drop-shadow-md">  {/*bg-slate-50  */}
         <div className="relative md:h-72 md:w-94 h-60  "> 
             <Image src={url} alt="aaa" fill={true} /><Link href=""> </Link>
         </div>
