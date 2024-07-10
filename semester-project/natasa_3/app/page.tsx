@@ -77,7 +77,7 @@ export default function Home() {
     
 
 {/* Third section */}
-   <div className={cn("h-1/2 pt-12 md:pt-24 md:pb-12 pb-10 px-8 md:px-12 bg-blue-950/60 mb-0 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-12 */} 
+   <div className={cn("h-1/2 pt-12 md:pt-16 md:pb-8 pb-10 px-8 md:px-12 bg-blue-950/60 mb-10 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-12 */} {/*md:pt-24 md:pb-12 */}
 
     <div className="grid 	gap-12 gap-6 md:gap-12 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
 
