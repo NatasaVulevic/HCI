@@ -8,6 +8,7 @@ import Button from "@/components/Button";
 import {Inter,Roboto, Roboto_Condensed,
         Playfair_Display,} from "next/font/google";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const roboto_condensed = Roboto_Condensed({
   weight: ["300", "700"],
@@ -76,7 +77,7 @@ export default function Home() {
     
 
 {/* Third section */}
-   <div className={cn("h-1/2 pt-12 md:pt-20 pb-10 px-8 md:px-12 bg-blue-950/60 mb-12 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-10 */} 
+   <div className={cn("h-1/2 pt-12 md:pt-24 md:pb-12 pb-10 px-8 md:px-12 bg-blue-950/60 mb-0 " )} >     {/*mx-4 pt-12 pb-4 mb-16 mb-12 */} 
 
     <div className="grid 	gap-12 gap-6 md:gap-12 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  "> 
 
@@ -102,9 +103,14 @@ export default function Home() {
   </div> 
 </div>  
 </div> 
+
+
 </main>
   );
 }
+
+
+
 
  //lg:text-xl  md:text-lg px-10
   {/* <Link  className="" href="/kitchen" > 
@@ -112,7 +118,7 @@ export default function Home() {
                           Kitchen
                         </button>  </Link> */} 
 
-                        {/* second section */}
+                        
 
 
 
@@ -124,3 +130,21 @@ export default function Home() {
 
   </div>
 </div> */}
+
+{/* <div className="flex lg:flex-row flex-col mt-24 mb-24 lg:mx-10  mx-12 ">
+-        <div className="lg:w-1/2 bg-white  w-full md:h-96">
+-          <div className={cn(" text-center md:text-5xl text-4xl font-serif font-extrabold text-blue-950 m-8 md:m-10 lg:m-8 ",
+-                          playfairDisplay.className)}>
+-            New Arrivals
+-          </div>
+-          <div className=" flex justify-center items-center xl:text-xl md:text-lg px-10">
+-            Don&apos;t miss the chance to be ahead of the curve.Explore our New Arrivals and make a statement with pieces that reflect your distinctive
+-            taste. Because when it comes to style, being on-trend has never been so effortless. Welcome the new, and welcome a fresh perspective
+-            to your home.
+-          </div>
+-            <div className="flex justify-center">
+-            <Link  className="px-5 mt-5 mb-4 xl:mt-8" href="/about" >
+-              <button className="px-5 py-2 mt-1 grid place-self-center bg-blue-900 text-white text-xl rounded-sm transition ease-in-out delay-250 hover:scale-105">
+-                See what&apos;s new</button></Link>
+-            </div>
+-          </div> */}
